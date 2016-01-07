@@ -1,0 +1,13 @@
+<Plug>(operator-flashy)	operator-flashy.txt	/*<Plug>(operator-flashy)*
+g:operator#flashy#flash_time	operator-flashy.txt	/*g:operator#flashy#flash_time*
+g:operator#flashy#group	operator-flashy.txt	/*g:operator#flashy#group*
+operator-flashy-changelog	operator-flashy.txt	/*operator-flashy-changelog*
+operator-flashy-contents	operator-flashy.txt	/*operator-flashy-contents*
+operator-flashy-dependency	operator-flashy.txt	/*operator-flashy-dependency*
+operator-flashy-installation	operator-flashy.txt	/*operator-flashy-installation*
+operator-flashy-interface	operator-flashy.txt	/*operator-flashy-interface*
+operator-flashy-introduction	operator-flashy.txt	/*operator-flashy-introduction*
+operator-flashy-key-mappings	operator-flashy.txt	/*operator-flashy-key-mappings*
+operator-flashy-variables	operator-flashy.txt	/*operator-flashy-variables*
+operator-flashy.txt	operator-flashy.txt	/*operator-flashy.txt*
+vim-operator-flashy	operator-flashy.txt	/*vim-operator-flashy*

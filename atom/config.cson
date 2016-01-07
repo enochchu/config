@@ -1,0 +1,75 @@
+"*":
+  "exception-reporting":
+    userId: "8c6e84c7-f206-6a15-fcc5-7fd7e2690510"
+  "release-notes":
+    viewedVersion: "0.94.0"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "f46e1fb785d3900928f90340ab5f99c20c52c062"
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    invisibles: {}
+    zoomFontWhenCtrlScrolling: true
+    fontSize: 10
+  core:
+    useReactEditor: true
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_store"
+      "Thumbs.db"
+      "*.classpath"
+      "*.class"
+      "*.zip"
+      ".class"
+    ]
+    audioBeep: false
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+    packagesWithKeymapsDisabled: [
+      "spell-check"
+    ]
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+    ensureSingleTrailingNewline: false
+  "relative-numbers":
+    displayTrueLineNumberOnCurrentLine: true
+  "vim-mode": {}
+  linter: {}
+  "autocomplete-plus":
+    autoActivationDelay: 1
+    navigateCompletions: "ctrl-p,ctrl-n"
+    fileBlacklist: [
+      ".*"
+      "*.md"
+    ]
+    includeCompletionsFromAllBuffers: true
+  "emmet-atom": {}
+  "tree-view": {}
+  jumpy:
+    fontSize: 1
+    highContrast: true
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-plus-async":
+    autoActivationDelay: 1
+    includeCompletionsFromAllBuffers: true
+  "linter-javac":
+    javaExecutablePath: "/usr/bin/javac"
+  "atom-ctags":
+    buildTimeout: 240000
+    cmdArgs: "--exclude=.* --exclude=lib --exclude=*.scss --exclude=*.css"
+  "ctags-status":
+    ctagsTypes: "class,function,interface,private,public,protected"
+  "symbols-tree-view":
+    autoToggle: true
+    scrollAnimation: false
+    autoHide: true
+  "spell-check": {}
+  "status-bar": {}
