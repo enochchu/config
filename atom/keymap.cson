@@ -17,10 +17,9 @@
 #   'ctrl-p': 'core:move-down'
 #
 
-
-'.atom-text-editor':
-    'ctrl-j': 'editor:move-line-down'
-    'ctrl-k': 'editor:move-line-up'
-
 'atom-text-editor:not(.mini).vim-mode:not(.insert-mode):not(.jumpy-jump-mode)':
+    'left': 'editor:outdent-selected-rows'
+    'down': 'editor:move-line-down'
+    'up': 'editor:move-line-up'
+    'right': 'editor:indent-selected-rows'
     's': 'jumpy:toggle'
