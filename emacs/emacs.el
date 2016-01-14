@@ -11,7 +11,6 @@
 (evil-mode 1)
 (global-auto-complete-mode t)
 (indent-guide-global-mode)
-(linum-relative-mode )
 (menu-bar-mode -1)
 (setq inhibit-startup-message t)
 (setq initial-major-mode 'text-mode)
