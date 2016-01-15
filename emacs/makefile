@@ -2,8 +2,8 @@ all: backup
 
 backup:
 	rm -R emacs.d/
-	mkdir -p emacs.d/elpa
-	cp -R ~/.emacs.d/elpa/ emacs.d/elpa/
+	mkdir emacs.d/
+	cp -R ~/.emacs.d/elpa/ emacs.d/
 	cp ~/.emacs emacs.el
 
 restore:
