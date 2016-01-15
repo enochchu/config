@@ -1,0 +1,86 @@
+
+M.I.T. "CADR LispMachine" main console font
+( Original name = CPTFONT
+  CPT = Character Printing Terminal = capable of displaying
+  whole characters, but not individual pixels )
+
+
+Instructions for the Linux console
+----------------------------------
+
+Just type
+
+$ consolechars -f lispm-8x14.psf
+
+(For maximum effect, start an emacs and/or lisp session).
+
+Reissue the instruction if -for instance after exiting the X
+windows system- some lines seem to get lost to the bottom of
+the screen (Ctrl-L can help there, too).
+
+Additionally, using framebuffer one can try things like :
+$ fbset 1024x768-90
+
+
+Instructions for X
+------------------
+
+- Install
+
+As root :
+
+# mkdir -p /usr/local/share/fonts/bitmap/   # or any other dir
+# cp FixedMediumLispm-13.pcf.gz /usr/local/share/fonts/bitmap/
+(gunzip the font archive for other Unixen)
+# cd /usr/local/share/fonts/bitmap/
+# mkfontdir
+# xset fp+ `pwd`
+
+Add  /usr/local/share/fonts/bitmap/  to the fontpath list in
+your XF86Config or xorg.conf file to avoid having to retype
+xset fp+ /usr/local/share/fonts/bitmap/
+
+- Use :
+
+$ xterm -fn "-lispm-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+
+This 8x13 fixed font looks nice with resolutions around 800x600
+For much higher ones try reverse video to enhance visibility :
+$ xterm -bg grey -fg black -fn "-lispm-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*"
+
+Under 1280x1024 this will look much like a lispm simulator :
+$ xterm -bc -bcf 225 -bcn 250 -vb +mb -bg black -fg white -fn "-lispm-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*" -geometry 96x69+300+60
+
+For Emacs inside X, you can put this in your .emacs file :
+
+(if window-system (progn
+(create-fontset-from-fontset-spec
+ "-lispm-fixed-medium-r-normal-*-13-*-*-*-*-*-fontset-lispm,
+ascii:-lispm-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*,
+latin-iso8859-1:-lispm-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*,
+latin-iso8859-15:-lispm-fixed-medium-r-normal-*-13-*-*-*-*-*-*-*")
+;; Now that the fontset has been defined, it can be invoked :
+(set-default-font "fontset-lispm")
+))
+
+... but I would instead recommend to just launch *macs
+with the modifier  -nw  from within the aforementioned xterm
+
+
+BUGS
+
+The font is both ascii-correct and ascii-complete, however...
+
+-Not in the original :
+	- A little serif at the tip of letters l and i
+	(added later in the history of lisp machines)
+	- Added many non-ascii chars, notably all accented letters.
+	(for instance, we don't know how greek "mu" ever looked like
+	on these machines. Seems it never got implemented)
+-Not in the final font :
+	The X font lacks all arrow signs, and both console and X fonts lack
+	some non-ascii chars like "Yu-Shiang-Whole-Fish" (= greek gamma).
+	This bug is inherent to the ISO encoding chosen.
+
+Send suggestions/enhancements to juanjo@eurogaran.com
+

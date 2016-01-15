@@ -1,0 +1,6 @@
+[submodule "fonts/source-code-pro"]
+	path = fonts/source-code-pro
+	url = https://github.com/adobe-fonts/source-code-pro
+[submodule "fonts/free-programming-fonts"]
+	path = fonts/free-programming-fonts
+	url = https://github.com/sixrevisions/free-programming-fonts
