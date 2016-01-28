@@ -39,6 +39,8 @@
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-j") 'move-text-down)
 (global-set-key (kbd "C-k") 'move-text-up)
+(global-set-key (kbd "M--") 'text-scale-decrease)
+(global-set-key (kbd "M-=") 'text-scale-increase)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "TAB") 'self-insert-command)
 (global-set-key [f1] 'neotree-toggle)
