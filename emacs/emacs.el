@@ -30,9 +30,6 @@
 (when (eq system-type 'darwin)
 	(set-default-font "Source Code Pro 10"))
 
-(when (eq system-type 'gnu/linux)
-	(set-default-font "Courier 10"))
-
 (global-set-key (kbd "C-1") 'helm-buffers-list)
 (global-set-key (kbd "C-c a") 'ace-jump-mode)
 (global-set-key (kbd "C-c f") 'helm-browse-project)
