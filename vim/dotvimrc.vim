@@ -22,17 +22,9 @@ let g:EasyMotion_startofline = 0
 let g:ctindentLine_char='•'
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.class'
 let g:ctrlp_dotfiles=0
-let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_max_files=0
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
-let g:ctrlp_working_path_mode = 0
-let g:gitgutter_sign_column_always = 1
 let g:indentLine_color_gui='#222222'
 let g:indentLirlp_working_path_mode = ''
-let g:matchparen_insert_timeout=5
-let g:qs_highlight_on_keys = ['f', 'F']
-let g:rbpt_loadcmd_toggle = 0
-let g:rbpt_max = 16
 let g:syntastic_mode_map = { "mode" : "passive",
 	\ "active_filetypes" : [],
 	\ "passive_filetypes" : [] }
@@ -51,10 +43,6 @@ au FileType css set omnifunc=csscomplete#CompleteCSS
 au GUIEnter * set visualbell t_vb=
 au InsertEnter * :set number
 au InsertLeave * :set relativenumber
-au Syntax * RainbowParenthesesLoadBraces
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesToggle
 au WinEnter * set cursorline cursorcolumn
 au WinLeave * set nocursorline nocursorcolumn
 
@@ -129,11 +117,6 @@ inoremap <c-x><c-]> <c-]>
 inoremap <tab> <c-r>=InsertTabWrapper ("forward")<CR>
 inoremap <s-tab> <c-r>=InsertTabWrapper ("backward")<CR>
 inoremap <c-tab> <c-r>=InsertTabWrapper ("startkey")<CR>
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 inoremap <c-space> <c-x><c-o>
 map  / <Plug>(easymotion-sn)
 map  N <Plug>(easymotion-prev)
@@ -148,10 +131,10 @@ map <C-t> :CtrlPMixed<CR>
 map <C-z> <C-y>,
 map <S-left> <esc>:tabprevious<CR>
 map <S-right> <esc>:tabnext<CR>
+map <f1> :NERDTree<CR>
 map <f2> :GundoToggle<CR>
 map <f3> <C-]>
 map <f4> :call TrimSpaces()<CR>
-map <f7> :SyntasticToggleMode<CR>
 map <leader>1 <esc>1@a
 map <leader>2 <esc>1@s
 map <leader>3 <esc>1@d
@@ -161,15 +144,6 @@ map <leader>w <Plug>(easymotion-prefix)
 map <leader>x :bd!<CR>
 map j gj
 map k gk
-map z/ <Plug>(incsearch-fuzzy-/)
-map z? <Plug>(incsearch-fuzzy-?)
-map zg/ <Plug>(incsearch-fuzzy-stay)
-nmap ,c :call DiffWithFileFromDisk()<cr>
-nmap ,gb :Gblame<CR>
-nmap ,gc :Gcommit<CR>
-nmap ,gd :Gdiff<CR>
-nmap ,gg :Gbrowse<CR>
-nmap ,gs :Gstatus<CR>
 nmap ,h :sp<CR>
 nmap ,v :vsp<CR>
 nmap <Down> gj
@@ -178,7 +152,6 @@ nmap <S-Right> >>
 nmap <S-h> <<
 nmap <S-l> >>
 nmap <Up> gk
-nmap <f5> viB
 nmap <leader>w :w!<cr>
 nmap j gj
 nmap k gk
