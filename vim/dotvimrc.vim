@@ -155,6 +155,7 @@ nmap <S-Right> >>
 nmap <S-h> <<
 nmap <S-l> >>
 nmap <Up> gk
+nmap <f5> viB
 nmap <leader>w :w!<cr>
 nmap j gj
 nmap k gk
