@@ -140,6 +140,9 @@ map <leader>2 <esc>1@s
 map <leader>3 <esc>1@d
 map <leader>4 <esc>1@f
 map <leader>a :!
+map <leader>gb :Gblame<CR>
+map <leader>gc :Gcommit<CR>
+map <leader>gd :Gdiff<CR>
 map <leader>w <Plug>(easymotion-prefix)
 map <leader>x :bd!<CR>
 map j gj

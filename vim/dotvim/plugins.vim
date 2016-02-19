@@ -20,6 +20,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'sergey-vlasov/ctrlp-hibuff'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/xoria256.vim'
 
 call plug#end()
