@@ -20,11 +20,14 @@ syntax on
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_startofline = 0
 let g:ctindentLine_char='•'
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.class'
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+    \ 'file': '\v\.(exe|so|dll|class|jar|war|ear)$'
+    \ }
 let g:ctrlp_dotfiles=0
 let g:ctrlp_max_files=0
+let g:ctrlp_follow_symlinks = 1
 let g:indentLine_color_gui='#222222'
-let g:indentLirlp_working_path_mode = ''
 let g:syntastic_mode_map = { "mode" : "passive",
 	\ "active_filetypes" : [],
 	\ "passive_filetypes" : [] }
