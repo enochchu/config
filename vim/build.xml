@@ -28,37 +28,4 @@
 		<delete file="${vimrc.file}" />
 		<delete dir="${vim.dir}" />
 	</target>
-
-	<target name="init">
-		<antcall target="deploy" />
-	</target>
-
-	<target name="plugged-update">
-		<get src="${plugged.url}"
-			verbose="true"
-			dest="./dotvim/autoload"
-		/>
-	</target>
-
-	<target name="reinit">
-		<antcall target="destroy" />
-		<antcall target="init" />
-	</target>
-
-	<target name="wiki">
-		<antcall target="sync-wiki" />
-		<antcall target="deploy-wiki" />
-	</target>
-
-	<target name="deploy-wiki">
-		<copy todir="${home.dir}/vimwiki" overwite="yes">
-			<fileset dir="./vimwiki/" />
-		</copy>
-	</target>
-
-	<target name="sync-wiki">
-		<echo message="Copying Public Vimwikis" />
-		<copy file="${home.dir}/vimwiki/Vimwiki Notes.wiki" tofile="./vimwiki/Vimwiki Notes.wiki" overwrite="yes" />
-		<copy file="${home.dir}/vimwiki/Public.wiki" tofile="./vimwiki/Public.wiki" overwrite="yes" />
-	</target>
 </project>
