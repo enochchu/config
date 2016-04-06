@@ -13,6 +13,7 @@
 (global-auto-complete-mode t)
 (indent-guide-global-mode)
 (menu-bar-mode -1)
+(setq column-enforce-comments 80)
 (setq inhibit-startup-message t)
 (setq initial-major-mode 'text-mode)
 (setq initial-scratch-message "")
