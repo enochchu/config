@@ -53,6 +53,12 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+;; No Window shortcuts
+(if (display-graphic-p)
+	(progn
+		(global-set-key (kbd "C-c f") 'fiplr-find-file))
+	(global-set-key (kbd "C-c f") 'fzf))
+
 (setq fiplr-ignored-globs
 	'((directories (".git" ".svn" "bin"))
 	(files ("*.jpg" "*.png" "*.zip" "*~" "*.class" "*.jar" "*.war" ".DS_Store"))))
