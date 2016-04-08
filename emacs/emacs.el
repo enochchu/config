@@ -47,6 +47,12 @@
 (global-set-key [f4] 'column-enforce-mode)
 (global-set-key [f5] 'sort-lines)
 
+;; Multiple Cursors Key Bindlings
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
 (setq fiplr-ignored-globs
 	'((directories (".git" ".svn" "bin"))
 	(files ("*.jpg" "*.png" "*.zip" "*~" "*.class" "*.jar" "*.war" ".DS_Store"))))
