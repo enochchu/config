@@ -51,10 +51,9 @@
 (global-set-key [f5] 'sort-lines)
 
 ;; Multiple Cursors Key Bindlings
-(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(global-set-key (kbd "C->") 'mc/mark-next-like-this)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-S-d C-S-d") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-word-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-word-like-this)
 
 ;; No Window shortcuts
 (if (display-graphic-p)
