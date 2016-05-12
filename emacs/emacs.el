@@ -40,6 +40,7 @@
 
 (global-set-key (kbd "C-1") 'helm-buffers-list)
 (global-set-key (kbd "C-c a") 'ace-jump-mode)
+(global-set-key (kbd "C-c e") 'helm-etags-select)
 (global-set-key (kbd "C-c f") 'fiplr-find-file)
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "M-x") 'helm-M-x)
