@@ -8,6 +8,8 @@
 
 (package-initialize)
 
+(load-theme 'material t)
+
 (autopair-global-mode t)
 (evil-mode 1)
 (global-auto-complete-mode t)
