@@ -46,11 +46,12 @@
 (global-set-key (kbd "C-c f") 'fiplr-find-file)
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key [f8] 'sr-speedbar-toggle)
+(global-set-key [f1] 'evil-mode)
 (global-set-key [f2] 'whitespace-mode)
 (global-set-key [f3] 'whitespace-cleanup)
 (global-set-key [f4] 'column-enforce-mode)
 (global-set-key [f5] 'sort-lines)
+(global-set-key [f8] 'sr-speedbar-toggle)
 
 ;; Multiple Cursors Key Bindlings
 (global-set-key (kbd "C-S-d C-S-d") 'mc/edit-lines)
