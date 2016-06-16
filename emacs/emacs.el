@@ -8,7 +8,7 @@
 
 (package-initialize)
 
-(load-theme 'material t)
+(load-theme 'zenburn t)
 
 (autopair-global-mode t)
 (evil-mode 1)
