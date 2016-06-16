@@ -45,6 +45,8 @@
 (global-set-key (kbd "C-c e") 'helm-etags-select)
 (global-set-key (kbd "C-c f") 'fiplr-find-file)
 (global-set-key (kbd "C-c g") 'magit-status)
+(global-set-key (kbd "C-c t") 'etags-select-find-tag)
+(global-set-key (kbd "C-]") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key [f1] 'evil-mode)
 (global-set-key [f2] 'whitespace-mode)
