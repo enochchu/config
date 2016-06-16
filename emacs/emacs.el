@@ -35,10 +35,12 @@
 (tool-bar-mode -1)
 
 (when (eq system-type 'darwin)
-	(set-default-font "Source Code Pro 10"))
+	(if (find-font (font-spec :name "Source Code Pro"))
+		(set-default-font "Source Code Pro 10")))
 
 (when (eq system-type 'gnu/linux)
-	(set-default-font "Inconsolata 10"))
+	(if (find-font (font-spec :name "Inconsolata"))
+		(set-default-font "Inconsolata 10")))
 
 (global-set-key (kbd "C-1") 'helm-buffers-list)
 (global-set-key (kbd "C-c a") 'ace-jump-mode)
