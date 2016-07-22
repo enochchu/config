@@ -135,7 +135,6 @@ map <C-z> <C-y>,
 map <S-left> <esc>:tabprevious<CR>
 map <S-right> <esc>:tabnext<CR>
 map <f1> :NERDTree<CR>
-map <f2> :GundoToggle<CR>
 map <f3> <C-]>
 map <f4> :call TrimSpaces()<CR>
 map <leader>1 <esc>1@a
