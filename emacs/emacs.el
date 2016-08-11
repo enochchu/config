@@ -48,11 +48,11 @@
 (global-set-key (kbd "C-c t") 'etags-select-find-tag)
 (global-set-key (kbd "C-]") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key [f1] 'evil-mode)
-(global-set-key [f2] 'whitespace-mode)
-(global-set-key [f3] 'whitespace-cleanup)
-(global-set-key [f4] 'column-enforce-mode)
-(global-set-key [f5] 'sort-lines)
+(global-set-key [f2] 'evil-mode)
+(global-set-key [f3] 'whitespace-mode)
+(global-set-key [f4] 'whitespace-cleanup)
+(global-set-key [f5] 'column-enforce-mode)
+(global-set-key [f6] 'sort-lines)
 (global-set-key [f8] 'sr-speedbar-toggle)
 
 ;; Multiple Cursors Key Bindlings
