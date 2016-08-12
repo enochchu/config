@@ -11,6 +11,7 @@
 (load-theme 'zenburn t)
 
 (autopair-global-mode t)
+(evil-mode 1)
 (global-auto-complete-mode t)
 (indent-guide-global-mode)
 (menu-bar-mode -1)
