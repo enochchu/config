@@ -49,6 +49,7 @@
 (global-set-key (kbd "C-c f") 'fiplr-find-file)
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-c t") 'etags-select-find-tag)
+(global-set-key (kbd "C-x C-d") 'helm-ls-git-ls)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key [f2] 'evil-mode)
 (global-set-key [f3] 'whitespace-mode)
