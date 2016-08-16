@@ -29,8 +29,6 @@
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 4)
 (setq-default truncate-lines 1)
-(toggle-scroll-bar -1)
-(tool-bar-mode -1)
 
 (when (eq system-type 'darwin)
 	(if (find-font (font-spec :name "Source Code Pro"))
