@@ -31,6 +31,8 @@
 (setq-default truncate-lines 1)
 
 (when (eq system-type 'darwin)
+	(tool-bar-mode -1)
+
 	(if (find-font (font-spec :name "Source Code Pro"))
 		(set-default-font "Source Code Pro 10")))
 
