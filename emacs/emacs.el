@@ -8,6 +8,20 @@
 
 (package-initialize)
 
+(when (memq window-system '(mac ns))
+	(tool-bar-mode -1)
+	(exec-path-from-shell-initialize))
+
+(when (eq system-type 'darwin)
+	(tool-bar-mode -1)
+
+	(if (find-font (font-spec :name "Source Code Pro"))
+		(set-default-font "Source Code Pro 10")))
+
+(when (eq system-type 'gnu/linux)
+	(if (find-font (font-spec :name "Inconsolata"))
+		(set-default-font "Inconsolata 10")))
+
 (load-theme 'zenburn t)
 
 (autopair-global-mode t)
@@ -15,6 +29,7 @@
 (global-auto-complete-mode t)
 (indent-guide-global-mode)
 (smooth-scrolling-mode 1)
+(tool-bar-mode -1)
 (setq column-enforce-comments 80)
 (setq inhibit-startup-message t)
 (setq initial-major-mode 'text-mode)
@@ -29,16 +44,6 @@
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 4)
 (setq-default truncate-lines 1)
-
-(when (eq system-type 'darwin)
-	(tool-bar-mode -1)
-
-	(if (find-font (font-spec :name "Source Code Pro"))
-		(set-default-font "Source Code Pro 10")))
-
-(when (eq system-type 'gnu/linux)
-	(if (find-font (font-spec :name "Inconsolata"))
-		(set-default-font "Inconsolata 10")))
 
 (global-set-key (kbd "C-]") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c /") 'helm-ag-this-file)
