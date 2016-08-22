@@ -23,6 +23,7 @@
 		(set-default-font "Inconsolata 10")))
 
 (load-theme 'zenburn t)
+(require 'evil-multiedit)
 
 (autopair-global-mode t)
 (evil-mode 1)
@@ -44,6 +45,21 @@
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 4)
 (setq-default truncate-lines 1)
+
+(define-key evil-visual-state-map "R" 'evil-multiedit-match-all)
+(define-key evil-normal-state-map (kbd "M-d") 'evil-multiedit-match-and-next)
+(define-key evil-visual-state-map (kbd "M-d") 'evil-multiedit-match-and-next)
+(define-key evil-normal-state-map (kbd "M-D") 'evil-multiedit-match-and-prev)
+(define-key evil-visual-state-map (kbd "M-D") 'evil-multiedit-match-and-prev)
+(define-key evil-visual-state-map (kbd "C-M-D") 'evil-multiedit-restore)
+(define-key evil-multiedit-state-map (kbd "RET") 'evil-multiedit-toggle-or-restrict-region)
+(define-key evil-motion-state-map (kbd "RET") 'evil-multiedit-toggle-or-restrict-region)
+(define-key evil-multiedit-state-map (kbd "C-n") 'evil-multiedit-next)
+(define-key evil-multiedit-state-map (kbd "C-p") 'evil-multiedit-prev)
+(define-key evil-multiedit-insert-state-map (kbd "C-n") 'evil-multiedit-next)
+(define-key evil-multiedit-insert-state-map (kbd "C-p") 'evil-multiedit-prev)
+(evil-ex-define-cmd "ie[dit]" 'evil-multiedit-ex-match)
+
 
 (global-set-key (kbd "C-]") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c /") 'helm-ag-this-file)
