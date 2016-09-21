@@ -121,10 +121,19 @@ inoremap <tab> <c-r>=InsertTabWrapper ("forward")<CR>
 inoremap <s-tab> <c-r>=InsertTabWrapper ("backward")<CR>
 inoremap <c-tab> <c-r>=InsertTabWrapper ("startkey")<CR>
 inoremap <c-space> <c-x><c-o>
+
+"" Easymotion
+map  <Leader>f <Plug>(easymotion-bd-f)
+map  <Leader>w <Plug>(easymotion-bd-w)
+map <Leader>gl <Plug>(easymotion-bd-jk)
+nmap <Leader>gl <Plug>(easymotion-overwin-line)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+nmap s <Plug>(easymotion-overwin-f2)
 map  / <Plug>(easymotion-sn)
 map  N <Plug>(easymotion-prev)
 map  n <Plug>(easymotion-next)
-map , <leader>
 map ,b :NERDTreeFromBookmark<space>
 map <C-b> :CtrlPBuffer<CR>
 map <C-e> :CtrlPBookmarkDir<CR>
