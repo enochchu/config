@@ -1,21 +1,22 @@
 "*":
-  "exception-reporting":
-    userId: "8c6e84c7-f206-6a15-fcc5-7fd7e2690510"
-  "release-notes":
-    viewedVersion: "0.94.0"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "f46e1fb785d3900928f90340ab5f99c20c52c062"
-  editor:
-    showIndentGuide: true
-    showInvisibles: true
-    tabLength: 4
-    invisibles: {}
-    zoomFontWhenCtrlScrolling: true
-    fontSize: 10
+  "atom-ctags":
+    buildTimeout: 240000
+    cmdArgs: "--exclude=.* --exclude=lib --exclude=*.scss --exclude=*.css"
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
+  "autocomplete-plus":
+    autoActivationDelay: 1
+    fileBlacklist: [
+      ".*"
+      "*.md"
+    ]
+    includeCompletionsFromAllBuffers: true
+    navigateCompletions: "ctrl-p,ctrl-n"
+  "autocomplete-plus-async":
+    autoActivationDelay: 1
+    includeCompletionsFromAllBuffers: true
   core:
-    useReactEditor: true
+    audioBeep: false
     ignoredNames: [
       ".git"
       ".hg"
@@ -27,49 +28,48 @@
       "*.zip"
       ".class"
     ]
-    audioBeep: false
+    packagesWithKeymapsDisabled: [
+      "spell-check"
+    ]
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
-    packagesWithKeymapsDisabled: [
-      "spell-check"
-    ]
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
-    ensureSingleTrailingNewline: false
-  "relative-numbers":
-    displayTrueLineNumberOnCurrentLine: true
-  "vim-mode": {}
-  linter: {}
-  "autocomplete-plus":
-    autoActivationDelay: 1
-    navigateCompletions: "ctrl-p,ctrl-n"
-    fileBlacklist: [
-      ".*"
-      "*.md"
-    ]
-    includeCompletionsFromAllBuffers: true
+    useReactEditor: true
+  "ctags-status":
+    ctagsTypes: "class,function,interface,private,public,protected"
+  editor:
+    fontSize: 10
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    zoomFontWhenCtrlScrolling: true
   "emmet-atom": {}
-  "tree-view": {}
+  "exception-reporting":
+    userId: "8c6e84c7-f206-6a15-fcc5-7fd7e2690510"
   jumpy:
     fontSize: 1
     highContrast: true
-  autocomplete:
-    includeCompletionsFromAllBuffers: true
-  "autocomplete-plus-async":
-    autoActivationDelay: 1
-    includeCompletionsFromAllBuffers: true
+  linter: {}
   "linter-javac":
     javaExecutablePath: "/usr/bin/javac"
-  "atom-ctags":
-    buildTimeout: 240000
-    cmdArgs: "--exclude=.* --exclude=lib --exclude=*.scss --exclude=*.css"
-  "ctags-status":
-    ctagsTypes: "class,function,interface,private,public,protected"
-  "symbols-tree-view":
-    autoToggle: true
-    scrollAnimation: false
-    autoHide: true
+  metrics:
+    userId: "f46e1fb785d3900928f90340ab5f99c20c52c062"
+  "relative-numbers":
+    displayTrueLineNumberOnCurrentLine: true
+  "release-notes":
+    viewedVersion: "0.94.0"
   "spell-check": {}
   "status-bar": {}
+  "symbols-tree-view":
+    autoHide: true
+    autoToggle: true
+    scrollAnimation: false
+  "tree-view": {}
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
