@@ -16,11 +16,11 @@
 	(tool-bar-mode -1)
 
 	(if (find-font (font-spec :name "Source Code Pro"))
-		(set-default-font "Source Code Pro 10")))
+		(set-default-font "Source Code Pro 12")))
 
 (when (eq system-type 'gnu/linux)
 	(if (find-font (font-spec :name "Inconsolata"))
-		(set-default-font "Inconsolata 10")))
+		(set-default-font "Inconsolata 12")))
 
 (load-theme 'zenburn t)
 (require 'evil-multiedit)
@@ -61,10 +61,10 @@
 (define-key evil-multiedit-insert-state-map (kbd "C-p") 'evil-multiedit-prev)
 (evil-ex-define-cmd "ie[dit]" 'evil-multiedit-ex-match)
 
-(global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
-(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
-(global-set-key (kbd "S-C-<down>") 'shrink-window)
-(global-set-key (kbd "S-C-<up>") 'enlarge-window)
+(global-set-key (kbd "C-c <left>") 'shrink-window-horizontally)
+(global-set-key (kbd "C-c <right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-c <down>") 'shrink-window)
+(global-set-key (kbd "C-c <up>") 'enlarge-window)
 
 (global-set-key (kbd "C-]") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c /") 'helm-ag-this-file)
