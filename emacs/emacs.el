@@ -9,8 +9,9 @@
 (package-initialize)
 
 (when (memq window-system '(mac ns))
-	(tool-bar-mode -1)
 	(exec-path-from-shell-initialize))
+	(scroll-bar-mode -1)
+	(tool-bar-mode -1)
 
 (when (eq system-type 'darwin)
 	(tool-bar-mode -1)
