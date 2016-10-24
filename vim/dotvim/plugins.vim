@@ -1,13 +1,13 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'Yggdroot/indentLine'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'eparreno/vim-l9'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jscappini/material.vim'
 Plug 'junegunn/fzf'
 Plug 'justinmk/vim-sneak'
-Plug 'kien/ctrlp.vim'
 Plug 'lepture/vim-velocity'
 Plug 'majutsushi/tagbar'
 Plug 'michaeljsmith/vim-indent-object'
