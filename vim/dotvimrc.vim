@@ -173,6 +173,7 @@ nmap k gk
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
 nnoremap <BS> <C-^>
+nnoremap <Leader>a :Ack!<Space>
 nnoremap <leader>' ""yls<c-r>={'"': "'", "'": '"'}[@"]<cr><esc>
 nnoremap <leader>ba va{
 nnoremap <leader>bi vi{
@@ -208,7 +209,7 @@ vnoremap L >gv
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+  let g:ackprg = 'ag --nogroup --nocolor --column'
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
