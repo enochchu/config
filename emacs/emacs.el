@@ -23,7 +23,9 @@
 	(if (find-font (font-spec :name "Inconsolata"))
 		(set-default-font "Inconsolata 12")))
 
-(load-theme 'zenburn t)
+(if (display-graphic-p)
+	(load-theme 'zenburn t))
+
 (require 'evil-multiedit)
 
 (autopair-global-mode t)
