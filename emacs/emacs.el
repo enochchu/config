@@ -10,8 +10,6 @@
 
 (when (memq window-system '(mac ns))
 	(exec-path-from-shell-initialize))
-	(scroll-bar-mode -1)
-	(tool-bar-mode -1)
 
 (when (eq system-type 'darwin)
 	(tool-bar-mode -1)
@@ -32,7 +30,6 @@
 (evil-mode 1)
 (global-auto-complete-mode t)
 (indent-guide-global-mode)
-(scroll-bar-mode -1)
 (setq column-enforce-comments 80)
 (setq inhibit-startup-message t)
 (setq initial-major-mode 'text-mode)
