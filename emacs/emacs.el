@@ -22,7 +22,10 @@
 		(set-default-font "Inconsolata 12")))
 
 (if (display-graphic-p)
-	(load-theme 'zenburn t))
+	(progn
+	  (load-theme 'cyberpunk t)
+	  (menu-bar-mode -1)
+	  (toggle-scroll-bar -1)))
 
 (require 'evil-multiedit)
 
