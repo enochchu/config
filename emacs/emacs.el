@@ -80,6 +80,7 @@
 (global-set-key (kbd "C-c t") 'etags-select-find-tag)
 (global-set-key (kbd "C-x C-d") 'helm-ls-git-ls)
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key [f1] 'neotree-toggle)
 (global-set-key [f2] 'evil-mode)
 (global-set-key [f3] 'whitespace-mode)
 (global-set-key [f4] 'whitespace-cleanup)
