@@ -33,7 +33,7 @@ let g:syntastic_mode_map = { "mode" : "passive",
 	\ "passive_filetypes" : [] }
 let g:THEME_DARK="xoria256"
 let g:THEME_LIGHT="eclipse"
-let g:THEME_TERMINAL="xoria256"
+let g:THEME_TERMINAL="default"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Auto Commands [AU]
@@ -46,8 +46,6 @@ au FileType css set omnifunc=csscomplete#CompleteCSS
 au GUIEnter * set visualbell t_vb=
 au InsertEnter * :set number
 au InsertLeave * :set relativenumber
-au WinEnter * set cursorline cursorcolumn
-au WinLeave * set nocursorline nocursorcolumn
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Options [OPS]
@@ -58,10 +56,8 @@ set autoread
 set background=dark
 set backspace=2
 set cmdheight=2
-set colorcolumn=80
 set complete=.,w,b,u,i
 set completeopt=longest,menuone
-set cursorline cursorcolumn
 set encoding=utf8
 set ffs=unix,dos,mac
 set foldcolumn=0
