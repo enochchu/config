@@ -3,7 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "sass-mode" "sass-mode.el" (22555 36431 0 0))
+;;;### (autoloads nil "sass-mode" "sass-mode.el" (22554 62993 16192
+;;;;;;  189000))
 ;;; Generated autoloads from sass-mode.el
 
 (autoload 'sass-mode "sass-mode" "\

@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "regex-tool" "regex-tool.el" (22487 14999 0
-;;;;;;  0))
+;;;### (autoloads nil "regex-tool" "regex-tool.el" (22554 62994 212192
+;;;;;;  246000))
 ;;; Generated autoloads from regex-tool.el
 
 (autoload 'regex-tool "regex-tool" "\

@@ -71,7 +71,9 @@
 
 (global-set-key (kbd "C-]") 'etags-select-find-tag-at-point)
 (global-set-key (kbd "C-c /") 'helm-ag-this-file)
+(global-set-key (kbd "C-c 1") 'ace-jump-buffer)
 (global-set-key (kbd "C-c a") 'ace-jump-mode)
+(global-set-key (kbd "C-c w") 'ace-window)
 (global-set-key (kbd "C-c b") 'helm-buffers-list)
 (global-set-key (kbd "C-c d") 'helm-find-files)
 (global-set-key (kbd "C-c e") 'helm-etags-select)

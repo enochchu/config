@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "evil-multiedit" "evil-multiedit.el" (22555
-;;;;;;  36466 0 0))
+;;;### (autoloads nil "evil-multiedit" "evil-multiedit.el" (22554
+;;;;;;  63024 316193 667000))
 ;;; Generated autoloads from evil-multiedit.el
 
 (autoload 'evil-multiedit-restore "evil-multiedit" "\
