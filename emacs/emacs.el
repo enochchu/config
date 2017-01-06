@@ -1,4 +1,4 @@
-(require 'package)
+ire 'package)
 
 (add-to-list 'package-archives
 	'("melpa" . "https://melpa.org/packages/"))
@@ -32,6 +32,7 @@
 (autopair-global-mode t)
 (evil-mode 1)
 (global-auto-complete-mode t)
+(projectile-global-mode)
 (indent-guide-global-mode)
 (setq column-enforce-comments 80)
 (setq inhibit-startup-message t)
