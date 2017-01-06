@@ -19,7 +19,7 @@
 
 (when (eq system-type 'gnu/linux)
 	(if (find-font (font-spec :name "Inconsolata"))
-		(set-default-font "Inconsolata 12")))
+		(set-default-font "Inconsolata 10")))
 
 (if (display-graphic-p)
 	(progn
