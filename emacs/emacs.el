@@ -113,7 +113,7 @@
 		:section-numbers nil
 		:with-toc nil
 	)))
-
+ 
 (defun go-to-column (column)
 	(interactive "nColumn: ")
 	(move-to-column column t))
