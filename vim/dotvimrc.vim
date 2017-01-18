@@ -1,9 +1,3 @@
-"" Variables [VAR]
-"" Auto Commands [AU]
-"" Options [OPS]
-"" Key Mappings [REMAP]
-"" OS Specific Settings [OS]
-
 source ~/.vim/functions.vim
 source ~/.vim/plugins.vim
 source ~/.vim/settings.vim
@@ -12,10 +6,6 @@ set shell=/bin/bash
 
 filetype plugin indent on
 syntax on
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" Variables [VAR]
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_startofline = 0
@@ -35,10 +25,6 @@ let g:THEME_DARK="xoria256"
 let g:THEME_LIGHT="eclipse"
 let g:THEME_TERMINAL="default"
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" Auto Commands [AU]
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 au BufWritePost * :set nobinary | set eol
 au BufWritePre * :call TrimSpaces()
 au BufWritePre * :set binary | set noeol
@@ -46,10 +32,7 @@ au FileType css set omnifunc=csscomplete#CompleteCSS
 au GUIEnter * set visualbell t_vb=
 au InsertEnter * :set number
 au InsertLeave * :set relativenumber
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" Options [OPS]
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufEnter * silent! lcd %:p:h
 
 set autoindent
 set autoread
@@ -106,10 +89,6 @@ hi clear SpecialKey
 hi link SpecialKey NonText
 hi clear SignColumn
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" Key Mappings [REMAP]
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 inoremap " ""<Left>
 inoremap <% <%  %><Left><Left><Left><Left>
 inoremap <c-x><c-]> <c-]>
@@ -117,25 +96,22 @@ inoremap <tab> <c-r>=InsertTabWrapper ("forward")<CR>
 inoremap <s-tab> <c-r>=InsertTabWrapper ("backward")<CR>
 inoremap <c-tab> <c-r>=InsertTabWrapper ("startkey")<CR>
 inoremap <c-space> <c-x><c-o>
-
-"" Easymotion
 map  <Leader>f <Plug>(easymotion-bd-f)
+map  <Leader>s <Plug>(easymotion-bd-f)
 map  <Leader>w <Plug>(easymotion-bd-w)
 map <Leader>gl <Plug>(easymotion-bd-jk)
 nmap <Leader>gl <Plug>(easymotion-overwin-line)
 nmap <Leader>f <Plug>(easymotion-overwin-f)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
-
 nmap s <Plug>(easymotion-overwin-f2)
 map  / <Plug>(easymotion-sn)
 map  N <Plug>(easymotion-prev)
 map  n <Plug>(easymotion-next)
 map ,b :NERDTreeFromBookmark<space>
-map <C-b> :CtrlPBuffer<CR>
-map <C-e> :CtrlPBookmarkDir<CR>
 map <C-f> :CtrlPLine<CR>
 map <C-r> :CtrlPBufTag<CR>
-map <C-t> :CtrlPMixed<CR>
+map <C-t> :CtrlPTag<CR>
+map <C-p> :CtrlPMixed<CR>
 map <C-z> <C-y>,
 map <S-left> <esc>:tabprevious<CR>
 map <S-right> <esc>:tabnext<CR>
@@ -177,7 +153,6 @@ nnoremap <leader>cd :cd
 nnoremap <leader>d :OverCommandLine <CR> %s/
 nnoremap <leader>pa va(
 nnoremap <leader>pi vi(
-nnoremap <leader>s :set syntax=
 nnoremap <silent> <F8> :TagbarToggle<CR>
 nnoremap <silent> <leader>? :execute 'vimgrep /'.@/.'/g %'<CR>:copen<CR>
 nnoremap <silent> N N:call HLNext(0.4)<CR>
@@ -200,17 +175,9 @@ vnoremap J xp`[V`]
 vnoremap K xkP`[V`]
 vnoremap L >gv
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" Ack
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 if executable('ag')
   let g:ackprg = 'ag --nogroup --nocolor --column'
 endif
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" OS Specific Settings [OS]
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has("mac") || has("macunix")
 	if has("gui_running")
