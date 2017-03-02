@@ -114,3 +114,8 @@
 (defun go-to-column (column)
 	(interactive "nColumn: ")
 	(move-to-column column t))
+
+(defun kill-other-buffers ()
+	"Kill all other buffers."
+	(interactive)
+	(mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
