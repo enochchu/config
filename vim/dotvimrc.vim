@@ -108,10 +108,12 @@ map  / <Plug>(easymotion-sn)
 map  N <Plug>(easymotion-prev)
 map  n <Plug>(easymotion-next)
 map ,b :NERDTreeFromBookmark<space>
+map <C-b> :CtrlPBuffer<CR>
 map <C-f> :CtrlPLine<CR>
 map <C-r> :CtrlPBufTag<CR>
 map <C-t> :CtrlPTag<CR>
 map <C-p> :CtrlPMixed<CR>
+map <C-b> :CtrlPBuffer<CR>
 map <C-z> <C-y>,
 map <S-left> <esc>:tabprevious<CR>
 map <S-right> <esc>:tabnext<CR>
