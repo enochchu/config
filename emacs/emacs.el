@@ -23,7 +23,7 @@
 
 (if (display-graphic-p)
 	(progn
-	  (load-theme 'cyberpunk t)
+	  (load-theme 'sanityinc-tomorrow-night t)
 	  (menu-bar-mode -1)
 	  (toggle-scroll-bar -1)))
 
