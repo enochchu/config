@@ -71,11 +71,13 @@
 (global-set-key (kbd "C-c <up>") 'enlarge-window)
 
 (global-set-key (kbd "C-]") 'etags-select-find-tag-at-point)
-(global-set-key (kbd "C-c /") 'helm-projectile-ag)
+(global-set-key (kbd "C-c /") 'helm-do-ag-this-file)
 (global-set-key (kbd "C-c 1") 'ace-jump-buffer)
 (global-set-key (kbd "C-c a") 'ace-jump-mode)
 (global-set-key (kbd "C-c w") 'ace-window)
 (global-set-key (kbd "C-c b") 'helm-buffers-list)
+(global-set-key (kbd "C-c f") 'helm-grep-do-git-grep)
+(global-set-key (kbd "C-c s") 'helm-do-ag)
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-c t") 'etags-select-find-tag)
 (global-set-key (kbd "M-x") 'helm-M-x)
@@ -91,12 +93,6 @@
 (global-set-key (kbd "C-S-d C-S-d") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-word-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-word-like-this)
-
-;; No Window shortcuts
-(if (display-graphic-p)
-	(progn
-		(global-set-key (kbd "C-c f") 'fiplr-find-file))
-	(global-set-key (kbd "C-c f") 'fzf))
 
 (setq fiplr-ignored-globs
 	'((directories (".git" ".svn" "bin"))
