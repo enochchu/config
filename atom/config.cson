@@ -1,75 +1,39 @@
 "*":
-  "atom-ctags":
-    buildTimeout: 240000
-    cmdArgs: "--exclude=.* --exclude=lib --exclude=*.scss --exclude=*.css"
-  autocomplete:
-    includeCompletionsFromAllBuffers: true
-  "autocomplete-plus":
-    autoActivationDelay: 1
-    fileBlacklist: [
-      ".*"
-      "*.md"
-    ]
-    includeCompletionsFromAllBuffers: true
-    navigateCompletions: "ctrl-p,ctrl-n"
-  "autocomplete-plus-async":
-    autoActivationDelay: 1
-    includeCompletionsFromAllBuffers: true
+  "advanced-open-file": {}
+  "atom-ctags": {}
   core:
-    audioBeep: false
-    ignoredNames: [
-      ".git"
-      ".hg"
-      ".svn"
-      ".DS_store"
-      "Thumbs.db"
-      "*.classpath"
-      "*.class"
-      "*.zip"
-      ".class"
+    disabledPackages: [
+      "symbols-view"
     ]
-    packagesWithKeymapsDisabled: [
-      "spell-check"
-    ]
+    telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
+      "atom-light-ui"
       "atom-dark-syntax"
     ]
-    useReactEditor: true
-  "ctags-status":
-    ctagsTypes: "class,function,interface,private,public,protected"
   editor:
-    fontSize: 10
-    invisibles: {}
+    fontSize: 12
     showIndentGuide: true
     showInvisibles: true
+    softWrap: true
     tabLength: 4
-    zoomFontWhenCtrlScrolling: true
-  "emmet-atom": {}
   "exception-reporting":
-    userId: "8c6e84c7-f206-6a15-fcc5-7fd7e2690510"
-  jumpy:
-    fontSize: 1
-    highContrast: true
-  linter: {}
-  "linter-javac":
-    javaExecutablePath: "/usr/bin/javac"
-  metrics:
-    userId: "f46e1fb785d3900928f90340ab5f99c20c52c062"
-  "relative-numbers":
-    displayTrueLineNumberOnCurrentLine: true
-  "release-notes":
-    viewedVersion: "0.94.0"
-  "spell-check": {}
-  "status-bar": {}
+    userId: "6ca9c48b-7b7f-da28-698b-8f9eac91efac"
+  "fuzzy-finder":
+    ignoredNames: [
+      ".*/*"
+      "classes/*"
+    ]
+  "status-bar":
+    isVisible: false
   "symbols-tree-view":
     autoHide: true
     autoToggle: true
+    defaultWidth: 250
     scrollAnimation: false
+  tabs:
+    showIcons: false
   "tree-view": {}
-  "vim-mode": {}
   welcome:
     showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: false
-    ignoreWhitespaceOnCurrentLine: false
