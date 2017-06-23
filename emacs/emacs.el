@@ -116,3 +116,20 @@
 	"Kill all other buffers."
 	(interactive)
 	(mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(elfeed-feeds
+   (quote
+	("https://news.ycombinator.com/rss" "http://kotaku.com/rss" "http://www.newyorker.com/feed/news" "http://www.newyorker.com/feed/everything" "https://www.theguardian.com/uk/rss" "http://www.anandtech.com/rss/" "https://www.reddit.com/r/programming/.rss" "https://www.reddit.com/r/politics/.rss" "https://www.reddit.com/r/all/.rss" "https://www.techdirt.com/techdirt_rss.xml")))
+ '(package-selected-packages
+   (quote
+	(w3m w3 elfeed zenburn-theme whitespace-cleanup-mode web-mode visual-regexp sx sr-speedbar smooth-scrolling smooth-scroll sass-mode regex-tool php-mode noctilux-theme neotree multiple-cursors move-text mmm-mode material-theme magit linum-relative indent-guide icicles helm-projectile helm-ls-git helm-git-files helm-git helm-ag-r helm-ag grizzl grails-mode gradle-mode git-gutter fzf fuzzy flycheck exec-path-from-shell evil-multiedit etags-select ecb dirtree-prosjekt cyberpunk-theme ctags column-enforce-mode color-theme-sanityinc-tomorrow color-theme avy-menu autopair auto-complete ag ack ace-window ace-jump-mode ace-jump-buffer))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
