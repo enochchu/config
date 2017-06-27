@@ -106,6 +106,16 @@ if (has("unix"))
 	command! COpenListAllFiles call COpenListAllFiles()
 endif
 
+function! DiffToggle()
+	if &diff
+		diffoff
+	else
+		diffthis
+	endif
+endfunction
+
+nnoremap <silent> <Leader>df :call DiffToggle()<CR>
+
 function! FindFiles(filename)
 	let error_file = tempname()
 
