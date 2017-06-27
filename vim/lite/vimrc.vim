@@ -39,7 +39,8 @@ au BufWritePre * :call TrimSpaces()
 set autoindent
 set autoread
 set backspace=2
-set cmdheight=2
+set binary
+set cmdheight=1
 set colorcolumn=80
 set complete=.,w,b,u,i
 set completeopt=longest,menuone
@@ -68,6 +69,7 @@ set nofoldenable
 set noswapfile
 set novisualbell
 set nowb
+set number
 set omnifunc=syntaxcomplete#Complete
 set path=$PWD/**
 set relativenumber
@@ -86,7 +88,8 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.pyc,*.jar
 set wildmenu
 set wildmode=longest,list,full
 
-map <f1> :ToggleQuickfix 25<CR>
+map <C-space> :nohl<CR>
+map <F1> :ToggleQuickfix 25<CR>
 map <F3> <C-w>gf<CR>
 map <leader>o <C-w>gf<CR>
 
@@ -147,6 +150,14 @@ function ListAllFilesToBuffer()
 endfunction
 
 command! ListAllFilesToBuffer call ListAllFilesToBuffer()
+
+function LogMode()
+	set autoread
+
+	set nomodifiable
+endfunction
+
+command! LogMode call LogMode()
 
 function ShowSpaces(...)
 	let @/='\v(\s+$)|( +\ze\t)'
