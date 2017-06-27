@@ -86,13 +86,30 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.pyc,*.jar
 set wildmenu
 set wildmode=longest,list,full
 
+map <f1> :ToggleQuickfix 25<CR>
 map <F3> <C-w>gf<CR>
 map <leader>o <C-w>gf<CR>
+
+if (has("unix"))
+	function COpenListAllFiles()
+		let tmpfile = tempname()
+
+		silent execute '!find `pwd` -type f > '.tmpfile
+
+		execute "cfile ". tmpfile
+
+		echo "copen loaded with list of files"
+
+		call delete(tmpfile)
+	endfunction
+
+	command! COpenListAllFiles call COpenListAllFiles()
+endif
 
 function! FindFiles(filename)
 	let error_file = tempname()
 
-	silent exe '!find . -name "'.a:filename.'" | xargs file | sed "s/:/:1:/" > '.error_file
+	silent execute '!find . -name "'.a:filename.'" | xargs file | sed "s/:/:1:/" > '.error_file
 
 	set errorformat=%f:%l:%m
 
@@ -101,7 +118,7 @@ function! FindFiles(filename)
 	copen
 
 	call delete(error_file)
-endfun
+endfunction
 
 command! -nargs=1 FindFile call FindFiles(<q-args>)
 
@@ -134,6 +151,24 @@ function ShowSpaces(...)
 
 	return oldhlsearch
 endfunction
+
+function! ToggleQuickfix(height)
+	if !exists("g:quickfix_is_open")
+		let g:quickfix_is_open = 0
+	endif
+
+	if g:quickfix_is_open
+		let g:quickfix_is_open = 0
+
+		cclose
+	else
+		let g:quickfix_is_open = 1
+
+		execute "topleft copen ".a:height
+	endif
+endfunction
+
+command! -nargs=1 ToggleQuickfix call ToggleQuickfix(<q-args>)
 
 function TrimSpaces() range
 	let oldhlsearch=ShowSpaces(1)
