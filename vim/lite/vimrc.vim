@@ -34,8 +34,10 @@ if has('win32')
 	set guifont=Consolas:h10
 endif
 
-au BufWritePre * :call TrimSpaces()
+autocmd BufWritePre * :call TrimSpaces()
+autocmd FileType qf nnoremap <buffer> <Enter><Enter> <C-W>gf<CR>
 
+set autochdir
 set autoindent
 set autoread
 set backspace=2
@@ -90,8 +92,11 @@ set wildmode=longest,list,full
 
 map <C-space> :nohl<CR>
 map <F1> :ToggleQuickfix 25<CR>
-map <F3> <C-w>gf<CR>
+map <F2> :vimgrep // **/*<left><left><left><left><left><left>
+map <F3> <C-]>
 map <leader>o <C-w>gf<CR>
+map <leader>r :s%///<left><left>
+map <leader>s :vimgrep // **/*<left><left><left><left><left><left>
 
 if (has("unix"))
 	function COpenListAllFiles()
