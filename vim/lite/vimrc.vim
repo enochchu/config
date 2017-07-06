@@ -13,6 +13,7 @@
 ""
 ""
 
+filetype plugin indent on
 syntax on
 
 if has("gui_running")
@@ -24,6 +25,8 @@ if has("gui_running")
 	set guitablabel=%M\ %t
 
 	colorscheme blue
+else
+	set background=dark
 endif
 
 if has("mouse")
@@ -82,11 +85,14 @@ set smartcase
 set smartindent
 set smarttab
 set so=7
+set tags=./tags;
 set t_Co=256
 set t_vb=
 set tabstop=4
 set tm=500
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.pyc,*.jar
+set wildchar=<Tab> wildmenu wildmode=full
+set wildcharm=<C-Z>
 set wildmenu
 set wildmode=longest,list,full
 
@@ -94,6 +100,8 @@ map <C-space> :nohl<CR>
 map <F1> :ToggleQuickfix 25<CR>
 map <F2> :vimgrep // **/*<left><left><left><left><left><left>
 map <F3> <C-]>
+map <leader>t :tabs<CR>
+map <leader>b :b <C-Z>
 map <leader>o <C-w>gf<CR>
 map <leader>r :s%///<left><left>
 map <leader>s :vimgrep // **/*<left><left><left><left><left><left>
