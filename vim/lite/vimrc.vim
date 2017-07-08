@@ -106,22 +106,6 @@ map <leader>o <C-w>gf<CR>
 map <leader>r :s%///<left><left>
 map <leader>s :vimgrep // **/*<left><left><left><left><left><left>
 
-if (has("unix"))
-	function COpenListAllFiles()
-		let tmpfile = tempname()
-
-		silent execute '!find `pwd` -type f > '.tmpfile
-
-		execute "cfile ". tmpfile
-
-		echo "copen loaded with list of files"
-
-		call delete(tmpfile)
-	endfunction
-
-	command! COpenListAllFiles call COpenListAllFiles()
-endif
-
 function! DiffToggle()
 	if &diff
 		diffoff
@@ -148,14 +132,20 @@ endfunction
 
 command! -nargs=1 FindFile call FindFiles(<q-args>)
 
-function ListAllFilesToBuffer()
-	execute 'new'
-
-	if has("win32")
+function ListAllFiles()
+	if filereadable("./.git")
+		execute 'r! git ls-files'
+	elseif has("win32")
 		execute 'r! dir * /b/s'
 	else
 		execute 'r! find `pwd` -type f'
 	end
+endfunction
+
+function ListAllFilesToBuffer()
+	execute 'new'
+
+	call ListAllFiles()
 
 	execute 'file listoffiles'
 
