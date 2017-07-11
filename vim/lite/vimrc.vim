@@ -40,7 +40,6 @@ endif
 autocmd BufWritePre * :call TrimSpaces()
 autocmd FileType qf nnoremap <buffer> <Enter><Enter> <C-W>gf<CR>
 
-set autochdir
 set autoindent
 set autoread
 set backspace=2
@@ -85,6 +84,7 @@ set smartcase
 set smartindent
 set smarttab
 set so=7
+set switchbuf=usetab
 set tags=./tags;
 set t_Co=256
 set t_vb=
@@ -100,6 +100,8 @@ map <C-space> :nohl<CR>
 map <F1> :ToggleQuickfix 25<CR>
 map <F2> :vimgrep // **/*<left><left><left><left><left><left>
 map <F3> <C-]>
+map <F8> :sbnext<CR>
+map <S-F8> :sbprevious<CR>
 map <leader>t :tabs<CR>
 map <leader>b :b <C-Z>
 map <leader>o <C-w>gf<CR>
@@ -133,7 +135,7 @@ endfunction
 command! -nargs=1 FindFile call FindFiles(<q-args>)
 
 function ListAllFiles()
-	if filereadable("./.git")
+	if isdirectory("./.git")
 		execute 'r! git ls-files'
 	elseif has("win32")
 		execute 'r! dir * /b/s'
