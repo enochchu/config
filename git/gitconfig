@@ -1,21 +1,19 @@
 [core]
-	editor = /usr/bin/vim
 	pager = sed 's/\t/.       /g' | less -R
+	whitespace = trailing-space,space-before-tab
 [color]
 	ui = auto
 [user]
 	name = Enoch Chu
-[advice]
-	pushNonFastForward = false
-	statusHints = false
-[diff]
-	renames = copies
-	mnemonicprefix = true
-[branch]
-	autosetupmerge = true
 [alias]
+	amend = commit -a --amend
+	co = checkout
+	enoch = "log --grep ENOCH"
+	generate = !git ls-files > gitlsfiles
 	list-aliases = config --get-regexp alias
-	update = pull --rebase upstream
-	undo = reset  HEAD~
-	tag-stable = !git tag -d enoch-stable && git tag -a enoch-stable -m "enoch-stable && git show enoch-stable"
+	save = !git add -A && git commit -m 'ENOCH SAVEPOINT'
 	stable = show enoch-stable
+	tag-stable = !git tag -d enoch-stable && git tag -a enoch-stable -m enoch-stable && git show enoch-stable
+	undo = reset HEAD~
+	update = pull --rebase upstream
+	wip = commit -am "ENOCH WIP"
