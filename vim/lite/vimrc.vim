@@ -13,6 +13,9 @@
 ""
 ""
 
+set runtimepath^=~/vim/ctrlp.vim
+set runtimepath^=~/vim/auto-pairs
+
 filetype plugin indent on
 syntax on
 
@@ -24,7 +27,7 @@ if has("gui_running")
 	set guioptions-=LlRrb
 	set guitablabel=%M\ %t
 
-	colorscheme blue
+	colorscheme koehler
 else
 	set background=dark
 endif
