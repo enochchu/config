@@ -13,8 +13,7 @@
 ""
 ""
 
-set runtimepath^=~/vim/ctrlp.vim
-set runtimepath^=~/vim/auto-pairs
+source ~/vimplugins/plugins.vim
 
 filetype plugin indent on
 syntax on
@@ -111,6 +110,50 @@ map <leader>o <C-w>gf<CR>
 map <leader>r :s%///<left><left>
 map <leader>s :vimgrep // **/*<left><left><left><left><left><left>
 
+" Easymotion Default settings
+" <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+" s{char}{char} to move to {char}{char}
+nmap s <Plug>(easymotion-overwin-f2)
+" Move to line
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" CtrlP Settings
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+set wildignore+=*.class
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+let g:ctrlp_max_files=0
+
+map <C-r> :CtrlPBufTagAll<CR>
+map <C-S-r> :CtrlPTag<CR>
+
+function! DetectCtrlPUserCommand()
+	if isdirectory("./.git")
+		let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	elseif has("win32")
+		let g:ctrlp_user_command = 'dir %s /-n /b /s /a-d'  " Windows
+	else
+		let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
+	end
+
+	echo g:ctrlp_user_command
+endfunction
+
+command! DetectCtrlPUserCommand call DetectCtrlPUserCommand()
+
+autocmd BufEnter * :DetectCtrlPUserCommand
+
 function! DiffToggle()
 	if &diff
 		diffoff
@@ -139,6 +182,7 @@ command! -nargs=1 FindFile call FindFiles(<q-args>)
 
 function ListAllFiles()
 	if isdirectory("./.git")
+		echom "git ls-fles"
 		execute 'r! git ls-files'
 	elseif has("win32")
 		execute 'r! dir * /b/s'
