@@ -1,18 +1,3 @@
-""
-""
-"" |------------------------------------------------|
-"" | Some useful shortcuts and commands             |
-"" |------------------------------------------------|
-"" | <C-W> gf              | Open file under cursor |
-"" |                       |                        |
-"" | :file <buffername>    | Renames buffer if      |
-"" |                       | buffer has no name     |
-"" |                       |                        |
-"" | G?foo<CR>             | Search backwards       |
-"" |------------------------------------------------|
-""
-""
-
 source ~/vimplugins/plugins.vim
 
 filetype plugin indent on
@@ -99,8 +84,6 @@ set wildmenu
 set wildmode=longest,list,full
 
 map <C-space> :nohl<CR>
-map <F1> :ToggleQuickfix 25<CR>
-map <F2> :vimgrep // **/*<left><left><left><left><left><left>
 map <F3> <C-]>
 map <F8> :sbnext<CR>
 map <S-F8> :sbprevious<CR>
@@ -108,7 +91,7 @@ map <leader>t :tabs<CR>
 map <leader>b :b <C-Z>
 map <leader>o <C-w>gf<CR>
 map <leader>r :s%///<left><left>
-map <leader>s :vimgrep // **/*<left><left><left><left><left><left>
+map <leader>s :set syntax=
 
 " Easymotion Default settings
 " <Leader>f{char} to move to {char}
@@ -146,8 +129,6 @@ function! DetectCtrlPUserCommand()
 	else
 		let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
 	end
-
-	echo g:ctrlp_user_command
 endfunction
 
 command! DetectCtrlPUserCommand call DetectCtrlPUserCommand()
