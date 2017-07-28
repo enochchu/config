@@ -163,7 +163,6 @@ command! -nargs=1 FindFile call FindFiles(<q-args>)
 
 function ListAllFiles()
 	if isdirectory("./.git")
-		echom "git ls-fles"
 		execute 'r! git ls-files'
 	elseif has("win32")
 		execute 'r! dir * /b/s'
