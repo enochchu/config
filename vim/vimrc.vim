@@ -84,6 +84,7 @@ set wildmenu
 set wildmode=longest,list,full
 
 map <C-space> :nohl<CR>
+map <F1> :NERDTreeToggle<CR>
 map <F3> <C-]>
 map <F8> :sbnext<CR>
 map <S-F8> :sbprevious<CR>
