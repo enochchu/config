@@ -1,0 +1,10 @@
+#
+# Rofi
+#
+wget https://launchpadlibrarian.net/301913581/rofi_1.3.1-2_amd64.deb 
+
+add-apt-repository ppa:aguignard/ppa
+apt-get update
+apt-get install libxcb-xrm-dev
+
+dpkg -i rofi_1.3.1-2_amd64.deb
