@@ -162,6 +162,23 @@ endfunction
 
 command! -nargs=1 FindFile call FindFiles(<q-args>)
 
+function! LargeFileSettings()
+	set eventignore+=FileType
+	setlocal bufhidden=unload
+	setlocal buftype=nowrite
+	setlocal noswapfile
+	setlocal ro
+	setlocal syntax=off
+	setlocal undolevels=-1
+endfunction
+
+let g:LargeFile = 1024 * 1024 * 10
+augroup LargeFile
+	call LargeFileSettings()
+augroup END
+
+command! LargeFileSettings call LargeFileSettings()
+
 function ListAllFiles()
 	if isdirectory("./.git")
 		execute 'r! git ls-files'
