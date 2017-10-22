@@ -23,7 +23,8 @@
 
 (if (display-graphic-p)
 	(progn
-	  (load-theme 'sanityinc-tomorrow-night t)
+	  (color-theme-initialize)
+	  (color-theme-midnight)
 	  (menu-bar-mode -1)
 	  (toggle-scroll-bar -1)))
 
