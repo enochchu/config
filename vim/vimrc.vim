@@ -172,11 +172,6 @@ function! LargeFileSettings()
 	setlocal undolevels=-1
 endfunction
 
-let g:LargeFile = 1024 * 1024 * 10
-augroup LargeFile
-	call LargeFileSettings()
-augroup END
-
 command! LargeFileSettings call LargeFileSettings()
 
 function ListAllFiles()
