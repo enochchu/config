@@ -1,0 +1,18 @@
+((("color-theme-sanityinc-tomorrow-night" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("color-theme-sanityinc-tomorrow" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("progn" .
+   [1 0 0 0 0])
+  ("display-graphic-p" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("setq-default" .
+   [0 0 0 0 0 0 0 0 0 1 0 0])
+  ("PortalUtil" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("getDate" .
+   [1 0 0 0 0 0 0])
+  ("startDateMonth" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("endDateMonth" .
+   [0 0 0 0 0 0 0 0 0 1 0 0])))
