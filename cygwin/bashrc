@@ -1,0 +1,13 @@
+[[ "$-" != *i* ]] && return
+
+alias c="cd /cygdrive/c/"
+alias home="cd /cygdrive/c/users/i/"
+alias projects="cd /cygdrive/c/users/i/projects"
+alias apt-get="apt-cyg"
+
+function update-apt-cyg {
+	URL=https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg
+	wget $URL -P /usr/local/bin/
+	chmod +x /usr/local/bin/apt-cyg
+	apt-cyg
+}
