@@ -20,6 +20,10 @@ if has("mouse")
 	set mouse=a
 endif
 
+if executable('ag')
+	let g:ackprg = 'ag --vimgrep'
+endif
+
 if has('win32')
 	set guifont=Consolas:h10
 endif
@@ -93,6 +97,8 @@ map <leader>b :b <C-Z>
 map <leader>o <C-w>gf<CR>
 map <leader>r :s%///<left><left>
 map <leader>s :set syntax=
+map <leader>s :Ack<space>
+map <leader>S :Ack <cword><CR>
 
 " Easymotion Default settings
 " <Leader>f{char} to move to {char}
@@ -243,3 +249,11 @@ function TrimSpaces() range
 
 	let &hlsearch=oldhlsearch
 endfunction
+
+""
+""
+"" Cheat sheet
+""
+"" vimgrep /dostuff()/g ../**/*
+""
+""
