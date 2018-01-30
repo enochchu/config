@@ -12,12 +12,9 @@
 
 (autopair-global-mode t)
 
-;; Theme
-(if (display-graphic-p)
-	(progn
-	  (if (find-font(font-spec :name "Source Code Pro"))
-		  (set-default-font "Source Code Pro 12"))
-	  (color-theme-sanityinc-tomorrow-night)))
+(tool-bar-mode -1)
+
+(color-theme-sanityinc-tomorrow-blue)
 
 ;; Setup - Auto Complete
 (global-auto-complete-mode t)
@@ -58,35 +55,10 @@
 (global-set-key (kbd "C-x C-l") 'eacl-complete-line)
 (global-set-key (kbd "C-x C-;") 'eacl-complete-statement)
 
-;; Display Settings
-(if (display-graphic-p)
-	(progn
-	  (tool-bar-mode -1)
-      (toggle-scroll-bar -1)))
-
 ;; Fiplr Settings
 (setq fiplr-ignored-globs
 	'((directories (".git" ".svn" "bin"))a
 	(files ("*.jpg" "*.png" "*.zip" "*~" "*.class" "*.jar" "*.war" ".DS_Store"))))
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (sanityinc-tomorrow-night)))
- '(custom-safe-themes
-   (quote
-	("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" default)))
- '(package-selected-packages
-   (quote
-	(color-theme-sanityinc-tomorrow eacl web-mode ace-jump-mode fiplr auto-complete evil autopair))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 ;; Personal Notes
 ;; C-SPACE: begin a selection ("set mark")
