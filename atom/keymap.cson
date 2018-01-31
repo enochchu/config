@@ -1,7 +1,0 @@
-'body':
-    'ctrl-alt-p': 'application:reopen-project'
-    'ctrl-o': 'advanced-open-file:toggle'
-    'cmd-o': 'advanced-open-file:toggle'
-
-'atom-text-editor':
-    'f3': 'atom-ctags:go-to-declaration'
