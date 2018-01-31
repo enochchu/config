@@ -3,6 +3,7 @@
 (package-install 'auto-complete)
 (package-install 'autopair)
 (package-install 'color-theme-sanityinc-tomorrow)
+(package-install 'eacl)
 (package-install 'evil)
 (package-install 'fiplr)
 (package-install 'helm-ag)

@@ -44,12 +44,16 @@
 (setq-default truncate-lines 1)
 
 ;; Global Set Keys (General)
+(global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-c b") 'buffer-menu)
 (global-set-key (kbd "C-c l") 'locate)
 (global-set-key (kbd "C-c w") 'other-window)
 
 ;; Global Set Keys (Ace Jump Mode)
 (global-set-key (kbd "C-c a") 'ace-jump-mode)
+
+;; Global Set Keys (Evil Mode Toggle)
+(global-set-key (kbd "<f2>") 'evil-mode)
 
 ;; Global Set Keys (EACL)
 (global-set-key (kbd "C-x C-l") 'eacl-complete-line)
