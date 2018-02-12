@@ -1,0 +1,34 @@
+export ANT_OPTS="-Xms4g -Xmx4g -Xmn256m -XX:PermSize=256m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC -XX:-UseGCOverheadLimit"
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+export GRADLE_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled -XX:+HeapDumpOnOutOfMemoryError"
+
+function browse-url-to-vim {
+	links -dump $1 | vim -
+}
+
+function browse-url-to-emacs {
+	emacs -nw --insert <(links -dump $1)
+}
+
+function note {
+	local fpath=$HOME/notes.md
+
+	if [ "$1" == "emacs" ]; then
+		emacs -nw + $fpath
+	elif [ "$1" == "vim" ]; then
+		vim + $fpath
+	elif [ "$1" == "edit" ]; then
+		vim + $fpath
+	elif [ "$1" == "cat" ]; then
+		cat $fpath
+	elif [ "$1" == "date" ]; then
+		echo '' >> $fpath
+		echo '# '`date +"%m-%d-%Y-%T"` >> $fpath
+		echo '---------------------' >> $fpath
+	elif [ "$1" == "" ]; then
+		less +G $fpath
+	else
+		echo '' >> $fpath
+		echo $@ >> $fpath
+	fi
+}
