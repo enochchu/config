@@ -1,4 +1,4 @@
-(list-packages)
+(list-packages)q
 (package-install 'ace-jump-mode)
 (package-install 'auto-complete)
 (package-install 'autopair)
@@ -7,6 +7,8 @@
 (package-install 'evil)
 (package-install 'fiplr)
 (package-install 'helm-ag)
-(package-install 'helm-projectile)
 (package-install 'helm-ls-git)
+(package-install 'helm-projectile)
 (package-install 'projectile)
+(package-install 'sr-speedbar)
+(package-install 'web-mode)
