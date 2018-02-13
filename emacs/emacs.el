@@ -12,6 +12,8 @@
 
 (autopair-global-mode t)
 
+(menu-bar-mode -1)
+
 (tool-bar-mode -1)
 
 (color-theme-sanityinc-tomorrow-blue)
