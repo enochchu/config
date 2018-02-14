@@ -48,13 +48,16 @@
 (setq-default truncate-lines 1)
 
 ;; Global Set Keys (General)
-(global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-c b") 'buffer-menu)
+(global-set-key (kbd "C-c b") 'helm-buffers-list)
 (global-set-key (kbd "C-c l") 'locate)
 (global-set-key (kbd "C-c w") 'other-window)
+(global-set-key (kbd "M-x") 'helm-M-x)
 
 ;; Global Set Keys (Ace Jump Mode)
 (global-set-key (kbd "C-c a") 'ace-jump-mode)
+
+;; Global Set Keys (Company Mode)
+(global-set-key "\t" 'company-complete-common)
 
 ;; Global Set Keys (Evil Mode Toggle)
 (global-set-key (kbd "<f2>") 'evil-mode)
