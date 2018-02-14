@@ -7,6 +7,7 @@
 (package-install 'eacl)
 (package-install 'evil)
 (package-install 'fiplr)
+(package-install 'flycheck)
 (package-install 'helm-ag)
 (package-install 'helm-ls-git)
 (package-install 'helm-projectile)
