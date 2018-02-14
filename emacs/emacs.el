@@ -10,18 +10,15 @@
 
 (package-initialize)
 
-(autopair-global-mode t)
-
 (menu-bar-mode -1)
-
 (tool-bar-mode -1)
 
 (color-theme-sanityinc-tomorrow-blue)
 
 (add-hook 'after-init-hook 'global-company-mode)
-
-;; Setup - Auto Complete
+(autopair-global-mode t)
 (global-auto-complete-mode t)
+(global-flycheck-mode)
 
 ;; Setup - Whitespace
 (require 'whitespace)
