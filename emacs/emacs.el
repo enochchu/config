@@ -18,6 +18,8 @@
 
 (color-theme-sanityinc-tomorrow-blue)
 
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; Setup - Auto Complete
 (global-auto-complete-mode t)
 
