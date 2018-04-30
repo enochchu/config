@@ -7,3 +7,8 @@ set runtimepath^=~/vimplugins/tagbar
 set runtimepath^=~/vimplugins/vim-easymotion
 set runtimepath^=~/vimplugins/vim-fugitive
 set runtimepath^=~/vimplugins/vim-surround
+set runtimepath^=~/vimplugins/minibufexpl.vim
+set runtimepath^=~/vimplugins/vim-multiple-cursors
+
+set runtimepath^=~/.fzf
+set runtimepath^=~/vimplugins/fzf.vim

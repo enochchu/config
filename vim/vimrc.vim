@@ -28,6 +28,8 @@ if has('win32')
 	set guifont=Consolas:h10
 endif
 
+autocmd VimEnter * MBEOpen
+
 autocmd BufWritePre * :call TrimSpaces()
 autocmd FileType qf nnoremap <buffer> <Enter><Enter> <C-W>gf<CR>
 
@@ -154,8 +156,9 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_max_files=0
 
-map <C-r> :CtrlPBufTagAll<CR>
-map <C-S-r> :CtrlPTag<CR>
+map <C-f> :CtrlPLine<CR>
+map <C-r> :CtrlPBufTag<CR>
+map <C-S-r> :CtrlPTagAll<CR>
 
 function! DetectCtrlPUserCommand()
 	if isdirectory("./.git")
