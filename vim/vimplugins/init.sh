@@ -1,5 +1,6 @@
 git clone git@github.com:ctrlpvim/ctrlp.vim.git
 git clone git@github.com:easymotion/vim-easymotion.git
+git clone git@github.com:fatih/vim-go.git
 git clone git@github.com:fholgado/minibufexpl.vim.git
 git clone git@github.com:jiangmiao/auto-pairs.git
 git clone git@github.com:junegunn/fzf.vim.git

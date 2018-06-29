@@ -9,6 +9,7 @@ set runtimepath^=~/vimplugins/vim-fugitive
 set runtimepath^=~/vimplugins/vim-surround
 set runtimepath^=~/vimplugins/minibufexpl.vim
 set runtimepath^=~/vimplugins/vim-multiple-cursors
+set runtimepath^=~/vimplugins/vim-go
 
 set runtimepath^=~/.fzf
 set runtimepath^=~/vimplugins/fzf.vim
