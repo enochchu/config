@@ -160,6 +160,12 @@ map <C-f> :CtrlPLine<CR>
 map <C-r> :CtrlPBufTag<CR>
 map <C-S-r> :CtrlPTagAll<CR>
 
+function! ConvertEndings()
+	execute '%s/\r//g'
+endfunction
+
+command! ConvertEndings call ConvertEndings()
+
 function! DetectCtrlPUserCommand()
 	if isdirectory("./.git")
 		let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
