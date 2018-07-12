@@ -1,0 +1,1 @@
+﻿netstat -an | findstr -i $args[0]
