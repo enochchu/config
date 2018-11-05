@@ -2,12 +2,21 @@ export ANT_OPTS="-Xms4g -Xmx4g -Xmn256m -XX:PermSize=256m -XX:MaxPermSize=1024m 
 export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 export GRADLE_OPTS="-Xmx1024m -Xms256m -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled -XX:+HeapDumpOnOutOfMemoryError"
 
+function browse-url-to-emacs {
+	emacs -nw --insert <(links -dump $1)
+}
+
 function browse-url-to-vim {
 	links -dump $1 | vim -
 }
 
-function browse-url-to-emacs {
-	emacs -nw --insert <(links -dump $1)
+function convert-line-endings {
+	find . -type f -print0 | xargs -0 dos2unix
+}
+
+function headless-chrome {
+	google-chrome --headless --disable-gpu --remote-debugging-port=9222 $1 &
+	google-chrome 127.0.0.1:9222
 }
 
 function note {
@@ -31,4 +40,13 @@ function note {
 		echo '' >> $fpath
 		echo $@ >> $fpath
 	fi
+}
+
+function php-server {
+	php -S localhost:$1
+}
+
+function setJdk {
+	sudo update-alternatives --config java
+	sudo update-alternatives --config javac
 }
