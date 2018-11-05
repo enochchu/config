@@ -1,4 +1,4 @@
-﻿$links = @(
+$links = @(
     'https://www.youtube.com/watch?v=Fi63FpHCi_s'
 )
 

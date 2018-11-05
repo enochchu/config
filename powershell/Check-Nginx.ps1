@@ -1,1 +1,1 @@
-﻿Get-Process -Name nginx
+Get-Process -Name nginx

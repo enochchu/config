@@ -1,1 +1,1 @@
-﻿Stop-Process -Name nginx
+Stop-Process -Name nginx
