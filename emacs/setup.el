@@ -15,3 +15,5 @@
 (package-install 'projectile)
 (package-install 'sr-speedbar)
 (package-install 'web-mode)
+(package-install 'w3m)
+(package-install 'elfeed)
