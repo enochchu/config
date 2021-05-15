@@ -5,101 +5,131 @@
 </head>
 <body>
 <outline title="Blogs" text="Blogs">
-<outline title="Paul Graham: Essays" text="Paul Graham: Essays" type="rss" htmlUrl="http://www.paulgraham.com/" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" />
-<outline text="Coding Horror" type="rss" htmlUrl="https://blog.codinghorror.com/" title="Coding Horror" xmlUrl="https://blog.codinghorror.com/rss/" />
-<outline title="The Daily WTF" text="The Daily WTF" xmlUrl="http://syndication.thedailywtf.com/TheDailyWtf" type="rss" htmlUrl="http://thedailywtf.com/" />
-<outline xmlUrl="https://rachelbythebay.com/w/atom.xml" title="Writing - rachelbythebay" type="rss" htmlUrl="https://rachelbythebay.com/w/" text="Writing - rachelbythebay" />
-<outline type="rss" xmlUrl="https://www.joelonsoftware.com/feed/" title="Joel on Software" text="Joel on Software" htmlUrl="https://www.joelonsoftware.com" />
+<outline title="Paul Graham: Essays" text="Paul Graham: Essays" type="rss" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" htmlUrl="http://www.paulgraham.com/" />
+<outline htmlUrl="https://blog.codinghorror.com/" title="Coding Horror" xmlUrl="https://blog.codinghorror.com/rss/" text="Coding Horror" type="rss" />
+<outline xmlUrl="http://syndication.thedailywtf.com/TheDailyWtf" htmlUrl="http://thedailywtf.com/" type="rss" title="The Daily WTF" text="The Daily WTF" />
+<outline title="Writing - rachelbythebay" htmlUrl="https://rachelbythebay.com/w/" xmlUrl="https://rachelbythebay.com/w/atom.xml" text="Writing - rachelbythebay" type="rss" />
+<outline type="rss" text="Joel on Software" xmlUrl="https://www.joelonsoftware.com/feed/" title="Joel on Software" htmlUrl="https://www.joelonsoftware.com" />
 </outline>
 <outline text="Comics/Manga" title="Comics/Manga">
-<outline type="rss" text="/r/manga: manga, on reddit." title="/r/manga: manga, on reddit." htmlUrl="https://www.reddit.com/r/manga/" xmlUrl="http://reddit.com/r/manga/.rss" />
-<outline xmlUrl="https://www.reddit.com/r/comicbooks/.rss" title="comicbooks" type="rss" text="comicbooks" htmlUrl="https://www.reddit.com/r/comicbooks/" />
-<outline htmlUrl="https://getcomics.info" xmlUrl="https://getcomics.info/feed/" type="rss" text="GetComics" title="GetComics" />
-<outline htmlUrl="http://www.mangaeden.com/en-directory/" text="MangaEden.com - Latest Manga Chapters (en)" title="MangaEden.com - Latest Manga Chapters (en)" xmlUrl="https://www.mangaeden.com/rss/en.xml" type="rss" />
-<outline title="LeviatanScans" text="LeviatanScans" type="rss" htmlUrl="https://leviatanscans.com/comicss" xmlUrl="https://leviatanscans.com/comicss/feed/" />
-<outline htmlUrl="https://www.dccomics.com/feed/batman" text="DC Comics" title="DC Comics" xmlUrl="https://www.dccomics.com/feed" type="rss" />
-<outline htmlUrl="https://xkcd.com/" xmlUrl="https://xkcd.com/rss.xml" title="xkcd.com" text="xkcd.com" type="rss" />
-<outline xmlUrl="https://www.cbr.com/feed/latest-comics-news/" type="rss" htmlUrl="https://www.cbr.com" text="CBR - Feed" title="CBR - Feed" />
-<outline type="rss" title="Dark Horse Comics Blog" htmlUrl="http://www.darkhorse.com/Blog" text="Dark Horse Comics Blog" xmlUrl="https://www.darkhorse.com/Blog/RSS" />
-<outline title="The Perry Bible Fellowship" type="rss" htmlUrl="https://pbfcomics.com" text="The Perry Bible Fellowship" xmlUrl="https://pbfcomics.com/feed/" />
-<outline type="rss" xmlUrl="https://www.smbc-comics.com/comic/rss" text="Saturday Morning Breakfast Cereal" title="Saturday Morning Breakfast Cereal" htmlUrl="https://www.smbc-comics.com/" />
+<outline xmlUrl="http://reddit.com/r/manga/.rss" title="/r/manga: manga, on reddit." htmlUrl="https://www.reddit.com/r/manga/" text="/r/manga: manga, on reddit." type="rss" />
+<outline title="comicbooks" xmlUrl="https://www.reddit.com/r/comicbooks/.rss" text="comicbooks" htmlUrl="https://www.reddit.com/r/comicbooks/" type="rss" />
+<outline title="GetComics" text="GetComics" htmlUrl="https://getcomics.info" xmlUrl="https://getcomics.info/feed/" type="rss" />
+<outline text="MangaEden.com - Latest Manga Chapters (en)" title="MangaEden.com - Latest Manga Chapters (en)" htmlUrl="http://www.mangaeden.com/en-directory/" xmlUrl="https://www.mangaeden.com/rss/en.xml" type="rss" />
+<outline type="rss" xmlUrl="https://leviatanscans.com/comicss/feed/" title="LeviatanScans" htmlUrl="https://leviatanscans.com/comicss" text="LeviatanScans" />
+<outline text="DC Comics" htmlUrl="https://www.dccomics.com/feed/batman" title="DC Comics" type="rss" xmlUrl="https://www.dccomics.com/feed" />
+<outline title="xkcd.com" htmlUrl="https://xkcd.com/" type="rss" xmlUrl="https://xkcd.com/rss.xml" text="xkcd.com" />
+<outline text="CBR - Feed" title="CBR - Feed" htmlUrl="https://www.cbr.com" xmlUrl="https://www.cbr.com/feed/latest-comics-news/" type="rss" />
+<outline type="rss" xmlUrl="https://www.darkhorse.com/Blog/RSS" text="Dark Horse Comics Blog" htmlUrl="http://www.darkhorse.com/Blog" title="Dark Horse Comics Blog" />
+<outline title="The Perry Bible Fellowship" type="rss" xmlUrl="https://pbfcomics.com/feed/" text="The Perry Bible Fellowship" htmlUrl="https://pbfcomics.com" />
+<outline title="Saturday Morning Breakfast Cereal" xmlUrl="https://www.smbc-comics.com/comic/rss" text="Saturday Morning Breakfast Cereal" type="rss" htmlUrl="https://www.smbc-comics.com/" />
 </outline>
-<outline title="Cybersecurity" text="Cybersecurity">
-<outline htmlUrl="http://www.fireeye.com/blog/threat-research/_jcr_content.feed" xmlUrl="https://www.fireeye.com/content/fireeye-www/en_US/blog/threat-research/_jcr_content.feed" type="rss" text="FireEye Threat Research" title="FireEye Threat Research" />
-<outline htmlUrl="https://krebsonsecurity.com" xmlUrl="https://krebsonsecurity.com/feed/" type="rss" title="Krebs on Security" text="Krebs on Security" />
-<outline text="Schneier on Security" type="rss" title="Schneier on Security" xmlUrl="https://www.schneier.com/feed/" htmlUrl="https://www.schneier.com" />
-<outline title="Dark Reading:" text="Dark Reading:" htmlUrl="https://www.darkreading.com" xmlUrl="https://www.darkreading.com/rss_simple.asp" type="rss" />
-<outline title="Daniel Miessler" text="Daniel Miessler" htmlUrl="https://danielmiessler.com" xmlUrl="https://danielmiessler.com/feed/" type="rss" />
+<outline text="Cybersecurity" title="Cybersecurity">
+<outline htmlUrl="http://internal-www.fireeye.com/blog/threat-research/_jcr_content.feed" xmlUrl="https://www.fireeye.com/content/fireeye-www/en_US/blog/threat-research/_jcr_content.feed" text="FireEye Threat Research" title="FireEye Threat Research" type="rss" />
+<outline title="Krebs on Security" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com" type="rss" text="Krebs on Security" />
+<outline xmlUrl="https://www.schneier.com/feed/" title="Schneier on Security" text="Schneier on Security" htmlUrl="https://www.schneier.com" type="rss" />
+<outline type="rss" htmlUrl="https://www.darkreading.com" xmlUrl="https://www.darkreading.com/rss_simple.asp" text="Dark Reading:" title="Dark Reading:" />
+<outline xmlUrl="https://danielmiessler.com/feed/" text="Daniel Miessler" title="Daniel Miessler" htmlUrl="https://danielmiessler.com" type="rss" />
 </outline>
 <outline text="Download" title="Download">
-<outline xmlUrl="https://getcomics.info/feed/" type="rss" title="GetComics" htmlUrl="https://getcomics.info" text="GetComics" />
+<outline text="GetComics" htmlUrl="https://getcomics.info" title="GetComics" type="rss" xmlUrl="https://getcomics.info/feed/" />
 </outline>
-<outline title="Gaming" text="Gaming">
-<outline text="Kotaku" htmlUrl="https://kotaku.com" type="rss" xmlUrl="https://kotaku.com/rss" title="Kotaku" />
-<outline htmlUrl="https://www.reddit.com/r/gaming/" title="r/gaming" xmlUrl="https://www.reddit.com/r/gaming/.rss" text="r/gaming" type="rss" />
+<outline text="Gaming" title="Gaming">
+<outline text="Kotaku" type="rss" htmlUrl="https://kotaku.com" title="Kotaku" xmlUrl="https://kotaku.com/rss" />
+<outline xmlUrl="https://www.reddit.com/r/gaming/.rss" type="rss" title="r/gaming" htmlUrl="https://www.reddit.com/r/gaming/" text="r/gaming" />
+</outline>
+<outline title="Google RSS" text="Google RSS">
+<outline text="APNews.com (Google RSS)" title="APNews.com (Google RSS)" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:apnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" type="rss" />
+<outline htmlUrl="https://news.google.com/search?q=when:24h+allinurl:reuters.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:reuters.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" text="Reuters (Google RSS)" title="Reuters (Google RSS)" type="rss" />
+<outline title="Sacramento Bee (Google RSS)" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:sacbee.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" text="Sacramento Bee (Google RSS)" type="rss" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:sacbee.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+<outline htmlUrl="https://news.google.com/search?q=when:24h+allinurl:pasadenastarnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:pasadenastarnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" text="Pasadena Star News (Google RSS)" title="Pasadena Star News (Google RSS)" type="rss" />
+<outline xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:southpasadenan.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" type="rss" text="South Pasadenan (Google RSS)" title="South Pasadenan (Google RSS)" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:southpasadenan.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+<outline type="rss" text="San Gabriel Valley Tribune (Google RSS)" title="San Gabriel Valley Tribune (Google RSS)" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:sgvtribune.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:sgvtribune.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+</outline>
+<outline text="Local News" title="Local News">
+<outline xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:sacbee.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" text="Sacramento Bee (Google RSS)" type="rss" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:sacbee.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" title="Sacramento Bee (Google RSS)" />
+<outline title="Pasadena Star News (Google RSS)" type="rss" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:pasadenastarnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" text="Pasadena Star News (Google RSS)" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:pasadenastarnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+<outline title="South Pasadenan (Google RSS)" text="South Pasadenan (Google RSS)" type="rss" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:southpasadenan.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:southpasadenan.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+<outline type="rss" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:sgvtribune.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" text="San Gabriel Valley Tribune (Google RSS)" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:sgvtribune.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" title="San Gabriel Valley Tribune (Google RSS)" />
 </outline>
 <outline text="News" title="News">
-<outline title="The Guardian" text="The Guardian" htmlUrl="https://www.theguardian.com" xmlUrl="https://www.theguardian.com/us/rss" type="rss" />
-<outline htmlUrl="https://www.propublica.org/" type="rss" text="ProPublica" xmlUrl="http://feeds.propublica.org/propublica/main" title="ProPublica" />
-<outline xmlUrl="http://feeds.bbci.co.uk/news/rss.xml" text="BBC News - Home" type="rss" title="BBC News - Home" htmlUrl="https://www.bbc.co.uk/news/" />
-<outline title="BBC News - World" type="rss" htmlUrl="https://www.bbc.co.uk/news/" text="BBC News - World" xmlUrl="http://feeds.bbci.co.uk/news/world/rss.xml" />
-<outline text="World News" xmlUrl="https://www.reddit.com/r/worldnews/.rss" htmlUrl="https://www.reddit.com/r/worldnews/" title="World News" type="rss" />
-<outline text="Axios" htmlUrl="https://www.axios.com/top/" xmlUrl="https://api.axios.com/feed/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=newsletter_axiosedge&amp;stream=business" title="Axios" type="rss" />
+<outline htmlUrl="https://www.theguardian.com" text="The Guardian" xmlUrl="https://www.theguardian.com/us/rss" title="The Guardian" type="rss" />
+<outline htmlUrl="https://www.propublica.org/" type="rss" xmlUrl="http://feeds.propublica.org/propublica/main" text="ProPublica" title="ProPublica" />
+<outline text="BBC News - Home" htmlUrl="https://www.bbc.co.uk/news/" type="rss" xmlUrl="http://feeds.bbci.co.uk/news/rss.xml" title="BBC News - Home" />
+<outline text="BBC News - World" title="BBC News - World" type="rss" xmlUrl="http://feeds.bbci.co.uk/news/world/rss.xml" htmlUrl="https://www.bbc.co.uk/news/" />
+<outline xmlUrl="https://www.reddit.com/r/worldnews/.rss" text="World News" title="World News" htmlUrl="https://www.reddit.com/r/worldnews/" type="rss" />
+<outline xmlUrl="https://api.axios.com/feed/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=newsletter_axiosedge&amp;stream=business" htmlUrl="https://www.axios.com/top/" title="Axios" text="Axios" type="rss" />
+<outline text="Al Jazeera America" title="Al Jazeera America" htmlUrl="http://america.aljazeera.com/articles.rss" xmlUrl="http://america.aljazeera.com/content/ajam/articles.rss" type="rss" />
+<outline title="South China Morning Post" htmlUrl="https://www.scmp.com" type="rss" text="South China Morning Post" xmlUrl="https://www.scmp.com/rss/91/feed" />
+<outline title="NPR News" text="NPR News" type="rss" htmlUrl="https://www.npr.org/templates/story/story.php?storyId=1001" xmlUrl="https://feeds.npr.org/1001/rss.xml" />
+<outline type="rss" title="FRONTLINE - Merlin Raw Feed | PBS" xmlUrl="http://feeds.feedburner.com/FrontlineEditorsNotes" htmlUrl="http://www.pbs.org/frontline/rss/redir/wgbh/pages/frontline/" text="FRONTLINE - Merlin Raw Feed | PBS" />
+<outline xmlUrl="https://www.reutersagency.com/feed/?taxonomy=best-sectors&amp;post_type=best" type="rss" text="Reuters News Agency" htmlUrl="https://www.reutersagency.com/en/" title="Reuters News Agency" />
+<outline text="APNews.com (Google RSS)" type="rss" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" title="APNews.com (Google RSS)" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:apnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
+<outline text="Features – FiveThirtyEight" title="Features – FiveThirtyEight" type="rss" htmlUrl="https://fivethirtyeight.com" xmlUrl="https://fivethirtyeight.com/features/feed/" />
+<outline title="Reuters (Google RSS)" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:reuters.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:reuters.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" text="Reuters (Google RSS)" type="rss" />
+<outline text="Sacramento Bee (Google RSS)" title="Sacramento Bee (Google RSS)" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:sacbee.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:sacbee.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" type="rss" />
+<outline xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:pasadenastarnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" text="Pasadena Star News (Google RSS)" title="Pasadena Star News (Google RSS)" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:pasadenastarnews.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" type="rss" />
+<outline title="South Pasadenan (Google RSS)" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:southpasadenan.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:southpasadenan.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" type="rss" text="South Pasadenan (Google RSS)" />
+<outline text="San Gabriel Valley Tribune (Google RSS)" type="rss" htmlUrl="https://news.google.com/search?q=when:24h+allinurl:sgvtribune.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" title="San Gabriel Valley Tribune (Google RSS)" xmlUrl="https://news.google.com/rss/search?q=when:24h+allinurl:sgvtribune.com&amp;hl=en-US&amp;gl=US&amp;ceid=US:en" />
 </outline>
-<outline text="Opinion" title="Opinion">
-<outline text="The Intercept" title="The Intercept" htmlUrl="https://theintercept.com" xmlUrl="https://theintercept.com/feed/?lang=en" type="rss" />
-<outline htmlUrl="https://www.propublica.org/" title="ProPublica" xmlUrl="http://feeds.propublica.org/propublica/main" type="rss" text="ProPublica" />
-<outline htmlUrl="https://www.techdirt.com/" title="Techdirt." xmlUrl="https://www.techdirt.com/techdirt_rss.xml" type="rss" text="Techdirt." />
-<outline xmlUrl="https://api.axios.com/feed/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=newsletter_axiosedge&amp;stream=business" htmlUrl="https://www.axios.com/top/" title="Axios" type="rss" text="Axios" />
+<outline title="Opinion" text="Opinion">
+<outline htmlUrl="https://theintercept.com" title="The Intercept" type="rss" text="The Intercept" xmlUrl="https://theintercept.com/feed/?lang=en" />
+<outline type="rss" text="ProPublica" htmlUrl="https://www.propublica.org/" xmlUrl="http://feeds.propublica.org/propublica/main" title="ProPublica" />
+<outline text="Techdirt." xmlUrl="https://www.techdirt.com/techdirt_rss.xml" type="rss" htmlUrl="https://www.techdirt.com/" title="Techdirt." />
+<outline type="rss" text="Axios" htmlUrl="https://www.axios.com/top/" title="Axios" xmlUrl="https://api.axios.com/feed/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=newsletter_axiosedge&amp;stream=business" />
+<outline title="FRONTLINE - Merlin Raw Feed | PBS" type="rss" xmlUrl="http://feeds.feedburner.com/FrontlineEditorsNotes" htmlUrl="http://www.pbs.org/frontline/rss/redir/wgbh/pages/frontline/" text="FRONTLINE - Merlin Raw Feed | PBS" />
+<outline xmlUrl="https://fivethirtyeight.com/features/feed/" text="Features – FiveThirtyEight" title="Features – FiveThirtyEight" htmlUrl="https://fivethirtyeight.com" type="rss" />
 </outline>
-<outline title="Programming" text="Programming">
-<outline xmlUrl="http://feeds.feedburner.com/Baeldung" htmlUrl="https://www.baeldung.com" title="Baeldung" type="rss" text="Baeldung" />
-<outline text="The Mozilla Blog" xmlUrl="https://blog.mozilla.org/rss" type="rss" title="The Mozilla Blog" htmlUrl="https://blog.mozilla.org" />
-<outline text="Chromium Blog" xmlUrl="http://blog.chromium.org/atom.xml" type="rss" title="Chromium Blog" htmlUrl="http://blog.chromium.org/" />
-<outline title="programming" text="programming" htmlUrl="https://www.reddit.com/r/programming/" xmlUrl="https://www.reddit.com/r/programming/.rss" type="rss" />
-<outline title="Learn Java" type="rss" text="Learn Java" htmlUrl="https://www.reddit.com/r/learnjava/" xmlUrl="https://www.reddit.com/r/learnjava/.rss" />
-<outline xmlUrl="https://www.reddit.com/r/python/.rss" type="rss" text="Python" htmlUrl="https://www.reddit.com/r/python/" title="Python" />
-<outline htmlUrl="https://www.reddit.com/r/java/" type="rss" xmlUrl="https://www.reddit.com/r/java/.rss" title="Java News/Tech/Discussion/etc. No programming help, no learning Java" text="Java News/Tech/Discussion/etc. No programming help, no learning Java" />
-<outline title="learn programming" type="rss" text="learn programming" htmlUrl="https://www.reddit.com/r/learnprogramming/" xmlUrl="https://www.reddit.com/r/learnprogramming/.rss" />
-<outline title="The Register" xmlUrl="https://www.theregister.com/headlines.atom" text="The Register" htmlUrl="https://www.theregister.com/" type="rss" />
+<outline text="Programming" title="Programming">
+<outline type="rss" htmlUrl="https://www.baeldung.com" title="Baeldung" text="Baeldung" xmlUrl="http://feeds.feedburner.com/Baeldung" />
+<outline text="The Mozilla Blog" htmlUrl="https://blog.mozilla.org" type="rss" xmlUrl="https://blog.mozilla.org/rss" title="The Mozilla Blog" />
+<outline title="Chromium Blog" xmlUrl="http://blog.chromium.org/atom.xml" htmlUrl="http://blog.chromium.org/" type="rss" text="Chromium Blog" />
+<outline type="rss" htmlUrl="https://www.reddit.com/r/programming/" text="programming" xmlUrl="https://www.reddit.com/r/programming/.rss" title="programming" />
+<outline type="rss" text="Learn Java" htmlUrl="https://www.reddit.com/r/learnjava/" xmlUrl="https://www.reddit.com/r/learnjava/.rss" title="Learn Java" />
+<outline htmlUrl="https://www.reddit.com/r/python/" type="rss" text="Python" xmlUrl="https://www.reddit.com/r/python/.rss" title="Python" />
+<outline xmlUrl="https://www.reddit.com/r/java/.rss" text="Java News/Tech/Discussion/etc. No programming help, no learning Java" htmlUrl="https://www.reddit.com/r/java/" type="rss" title="Java News/Tech/Discussion/etc. No programming help, no learning Java" />
+<outline text="learn programming" title="learn programming" htmlUrl="https://www.reddit.com/r/learnprogramming/" xmlUrl="https://www.reddit.com/r/learnprogramming/.rss" type="rss" />
+<outline xmlUrl="https://www.theregister.com/headlines.atom" title="The Register" text="The Register" type="rss" htmlUrl="https://www.theregister.com/" />
 </outline>
 <outline title="Reddit" text="Reddit">
-<outline text="best of reddit" htmlUrl="https://www.reddit.com/r/bestof/" title="best of reddit" type="rss" xmlUrl="https://www.reddit.com/r/bestof/.rss" />
-<outline title="World News" xmlUrl="https://www.reddit.com/r/worldnews/.rss" type="rss" text="World News" htmlUrl="https://www.reddit.com/r/worldnews/" />
+<outline xmlUrl="https://www.reddit.com/r/bestof/.rss" htmlUrl="https://www.reddit.com/r/bestof/" text="best of reddit" type="rss" title="best of reddit" />
+<outline text="World News" htmlUrl="https://www.reddit.com/r/worldnews/" xmlUrl="https://www.reddit.com/r/worldnews/.rss" type="rss" title="World News" />
 <outline title="r/gaming" type="rss" htmlUrl="https://www.reddit.com/r/gaming/" xmlUrl="https://www.reddit.com/r/gaming/.rss" text="r/gaming" />
-<outline type="rss" title="programming" xmlUrl="https://www.reddit.com/r/programming/.rss" text="programming" htmlUrl="https://www.reddit.com/r/programming/" />
-<outline htmlUrl="https://www.reddit.com/r/politics/" text="Politics" title="Politics" type="rss" xmlUrl="http://reddit.com/r/politics/.rss" />
-<outline title="/r/space: news, articles and discussion" htmlUrl="https://www.reddit.com/r/space/" type="rss" text="/r/space: news, articles and discussion" xmlUrl="http://reddit.com/r/space/.rss" />
-<outline htmlUrl="https://www.reddit.com/r/manga/" xmlUrl="http://reddit.com/r/manga/.rss" type="rss" text="/r/manga: manga, on reddit." title="/r/manga: manga, on reddit." />
-<outline type="rss" title="comicbooks" xmlUrl="https://www.reddit.com/r/comicbooks/.rss" text="comicbooks" htmlUrl="https://www.reddit.com/r/comicbooks/" />
-<outline text="learn programming" title="learn programming" htmlUrl="https://www.reddit.com/r/learnprogramming/" type="rss" xmlUrl="https://www.reddit.com/r/learnprogramming/.rss" />
-<outline text="NASA" xmlUrl="http://reddit.com/r/nasa/.rss" title="NASA" htmlUrl="https://www.reddit.com/r/nasa/" type="rss" />
-<outline title="SPACEFLIGHT" type="rss" text="SPACEFLIGHT" htmlUrl="https://www.reddit.com/r/spaceflight/" xmlUrl="http://reddit.com/r/spaceflight/.rss" />
-<outline text="Space Launch System" htmlUrl="https://www.reddit.com/r/SpaceLaunchSystem/" title="Space Launch System" xmlUrl="https://www.reddit.com/r/SpaceLaunchSystem/.rss" type="rss" />
-<outline text="European Space Agency" htmlUrl="https://www.reddit.com/r/esa/" type="rss" xmlUrl="http://reddit.com/r/esa/.rss" title="European Space Agency" />
+<outline xmlUrl="https://www.reddit.com/r/programming/.rss" text="programming" title="programming" htmlUrl="https://www.reddit.com/r/programming/" type="rss" />
+<outline type="rss" title="Politics" text="Politics" htmlUrl="https://www.reddit.com/r/politics/" xmlUrl="http://reddit.com/r/politics/.rss" />
+<outline title="/r/space: news, articles and discussion" type="rss" text="/r/space: news, articles and discussion" htmlUrl="https://www.reddit.com/r/space/" xmlUrl="http://reddit.com/r/space/.rss" />
+<outline title="/r/manga: manga, on reddit." type="rss" htmlUrl="https://www.reddit.com/r/manga/" xmlUrl="http://reddit.com/r/manga/.rss" text="/r/manga: manga, on reddit." />
+<outline text="comicbooks" htmlUrl="https://www.reddit.com/r/comicbooks/" xmlUrl="https://www.reddit.com/r/comicbooks/.rss" type="rss" title="comicbooks" />
+<outline text="learn programming" htmlUrl="https://www.reddit.com/r/learnprogramming/" title="learn programming" type="rss" xmlUrl="https://www.reddit.com/r/learnprogramming/.rss" />
+<outline xmlUrl="http://reddit.com/r/nasa/.rss" title="NASA" text="NASA" type="rss" htmlUrl="https://www.reddit.com/r/nasa/" />
+<outline xmlUrl="http://reddit.com/r/spaceflight/.rss" title="SPACEFLIGHT" text="SPACEFLIGHT" htmlUrl="https://www.reddit.com/r/spaceflight/" type="rss" />
+<outline text="Space Launch System" title="Space Launch System" type="rss" htmlUrl="https://www.reddit.com/r/SpaceLaunchSystem/" xmlUrl="https://www.reddit.com/r/SpaceLaunchSystem/.rss" />
+<outline type="rss" xmlUrl="http://reddit.com/r/esa/.rss" title="European Space Agency" text="European Space Agency" htmlUrl="https://www.reddit.com/r/esa/" />
+<outline title="Neutral Politics: Evidence. Logic. Respect." text="Neutral Politics: Evidence. Logic. Respect." htmlUrl="https://www.reddit.com/r/NeutralPolitics/" xmlUrl="https://www.reddit.com/r/NeutralPolitics/.rss" type="rss" />
 </outline>
 <outline title="Space" text="Space">
-<outline type="rss" text="SpaceNews" htmlUrl="https://spacenews.com" title="SpaceNews" xmlUrl="https://spacenews.com/feed" />
-<outline htmlUrl="https://www.reddit.com/r/space/" text="/r/space: news, articles and discussion" title="/r/space: news, articles and discussion" xmlUrl="http://reddit.com/r/space/.rss" type="rss" />
-<outline htmlUrl="https://www.reddit.com/r/esa/" title="European Space Agency" type="rss" xmlUrl="http://reddit.com/r/esa/.rss" text="European Space Agency" />
-<outline title="SPACEFLIGHT" text="SPACEFLIGHT" htmlUrl="https://www.reddit.com/r/spaceflight/" type="rss" xmlUrl="http://reddit.com/r/spaceflight/.rss" />
-<outline text="NASA" title="NASA" type="rss" xmlUrl="http://reddit.com/r/nasa/.rss" htmlUrl="https://www.reddit.com/r/nasa/" />
+<outline text="SpaceNews" type="rss" xmlUrl="https://spacenews.com/feed" title="SpaceNews" htmlUrl="https://spacenews.com" />
+<outline type="rss" text="/r/space: news, articles and discussion" xmlUrl="http://reddit.com/r/space/.rss" title="/r/space: news, articles and discussion" htmlUrl="https://www.reddit.com/r/space/" />
+<outline title="European Space Agency" htmlUrl="https://www.reddit.com/r/esa/" type="rss" text="European Space Agency" xmlUrl="http://reddit.com/r/esa/.rss" />
+<outline title="SPACEFLIGHT" xmlUrl="http://reddit.com/r/spaceflight/.rss" text="SPACEFLIGHT" type="rss" htmlUrl="https://www.reddit.com/r/spaceflight/" />
+<outline text="NASA" htmlUrl="https://www.reddit.com/r/nasa/" xmlUrl="http://reddit.com/r/nasa/.rss" type="rss" title="NASA" />
+<outline text="NASA Image of the Day" title="NASA Image of the Day" htmlUrl="http://www.nasa.gov/" type="rss" xmlUrl="https://www.nasa.gov/rss/dyn/lg_image_of_the_day.rss" />
 </outline>
-<outline title="Tech" text="Tech">
-<outline text="AnandTech" htmlUrl="http://www.anandtech.com" xmlUrl="https://www.anandtech.com/rss" type="rss" title="AnandTech" />
-<outline htmlUrl="https://news.ycombinator.com/" type="rss" xmlUrl="https://news.ycombinator.com/rss" title="Hacker News" text="Hacker News" />
-<outline xmlUrl="http://rss.slashdot.org/slashdot/slashdotMain" title="Slashdot" text="Slashdot" type="rss" htmlUrl="https://slashdot.org/" />
-<outline htmlUrl="https://blog.mozilla.org" xmlUrl="https://blog.mozilla.org/rss" type="rss" title="The Mozilla Blog" text="The Mozilla Blog" />
-<outline title="Techdirt." htmlUrl="https://www.techdirt.com/" type="rss" xmlUrl="https://www.techdirt.com/techdirt_rss.xml" text="Techdirt." />
-<outline htmlUrl="https://arstechnica.com" xmlUrl="https://feeds.arstechnica.com/arstechnica/index" title="Ars Technica" text="Ars Technica" type="rss" />
-<outline text="The Verge - All Posts" title="The Verge - All Posts" htmlUrl="https://www.theverge.com/" xmlUrl="https://www.theverge.com/rss/index.xml" type="rss" />
-<outline text="TechCrunch" type="rss" htmlUrl="https://techcrunch.com" xmlUrl="https://techcrunch.com/feed/" title="TechCrunch" />
-<outline title="The Register" htmlUrl="https://www.theregister.com/" text="The Register" type="rss" xmlUrl="https://www.theregister.com/headlines.atom" />
+<outline text="Tech" title="Tech">
+<outline xmlUrl="https://www.anandtech.com/rss" title="AnandTech" text="AnandTech" type="rss" htmlUrl="http://www.anandtech.com" />
+<outline type="rss" text="Hacker News" htmlUrl="https://news.ycombinator.com/" title="Hacker News" xmlUrl="https://news.ycombinator.com/rss" />
+<outline type="rss" text="Slashdot" xmlUrl="http://rss.slashdot.org/slashdot/slashdotMain" htmlUrl="https://slashdot.org/" title="Slashdot" />
+<outline title="The Mozilla Blog" xmlUrl="https://blog.mozilla.org/rss" text="The Mozilla Blog" type="rss" htmlUrl="https://blog.mozilla.org" />
+<outline htmlUrl="https://www.techdirt.com/" title="Techdirt." xmlUrl="https://www.techdirt.com/techdirt_rss.xml" text="Techdirt." type="rss" />
+<outline title="Ars Technica" type="rss" text="Ars Technica" htmlUrl="https://arstechnica.com" xmlUrl="https://feeds.arstechnica.com/arstechnica/index" />
+<outline xmlUrl="https://www.theverge.com/rss/index.xml" text="The Verge - All Posts" title="The Verge - All Posts" type="rss" htmlUrl="https://www.theverge.com/" />
+<outline text="TechCrunch" title="TechCrunch" type="rss" xmlUrl="https://techcrunch.com/feed/" htmlUrl="https://techcrunch.com" />
+<outline htmlUrl="https://www.theregister.com/" type="rss" xmlUrl="https://www.theregister.com/headlines.atom" title="The Register" text="The Register" />
 </outline>
-<outline title="Web Comics" text="Web Comics">
-<outline htmlUrl="https://xkcd.com/" xmlUrl="https://xkcd.com/rss.xml" title="xkcd.com" text="xkcd.com" type="rss" />
-<outline htmlUrl="https://pbfcomics.com" xmlUrl="https://pbfcomics.com/feed/" type="rss" text="The Perry Bible Fellowship" title="The Perry Bible Fellowship" />
-<outline text="Saturday Morning Breakfast Cereal" htmlUrl="https://www.smbc-comics.com/" xmlUrl="https://www.smbc-comics.com/comic/rss" title="Saturday Morning Breakfast Cereal" type="rss" />
+<outline text="Web Comics" title="Web Comics">
+<outline text="xkcd.com" htmlUrl="https://xkcd.com/" type="rss" title="xkcd.com" xmlUrl="https://xkcd.com/rss.xml" />
+<outline title="The Perry Bible Fellowship" xmlUrl="https://pbfcomics.com/feed/" type="rss" htmlUrl="https://pbfcomics.com" text="The Perry Bible Fellowship" />
+<outline title="Saturday Morning Breakfast Cereal" xmlUrl="https://www.smbc-comics.com/comic/rss" htmlUrl="https://www.smbc-comics.com/" type="rss" text="Saturday Morning Breakfast Cereal" />
 </outline>
 </body>
 </opml>
