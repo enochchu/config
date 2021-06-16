@@ -1,10 +1,10 @@
-#
-# Rofi
-#
-wget https://launchpadlibrarian.net/301913581/rofi_1.3.1-2_amd64.deb 
+# Setup
 
-add-apt-repository ppa:aguignard/ppa
-apt-get update
-apt-get install libxcb-xrm-dev
+# Dev Tools
+sudo apt install -y python3
+sudo apt install -y python3-pip
+sudo apt install -y vim emacs
 
-dpkg -i rofi_1.3.1-2_amd64.deb
+# Tools
+sudo apt install -y ffmpeg imagemagick
+
