@@ -1,7 +1,5 @@
 (list-packages)
-(package-install 'ace-jump-mode)
 (package-install 'auto-complete)
-(package-install 'autopair)
 (package-install 'color-theme-sanityinc-tomorrow)
 (package-install 'company)
 (package-install 'eacl)
