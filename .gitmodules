@@ -4,3 +4,6 @@
 [submodule "fonts/free-programming-fonts"]
 	path = fonts/free-programming-fonts
 	url = https://github.com/sixrevisions/free-programming-fonts
+[submodule "settings-workspace"]
+	path = settings-workspace
+	url = ../settings-workspace.git
