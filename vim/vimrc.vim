@@ -28,8 +28,6 @@ if has('win32')
 	set guifont=Consolas:h10
 endif
 
-autocmd VimEnter * MBEOpen
-
 autocmd BufWritePre * :call TrimSpaces()
 autocmd FileType qf nnoremap <buffer> <Enter><Enter> <C-W>gf<CR>
 
