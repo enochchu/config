@@ -116,6 +116,12 @@ endfunction
 
 command! ConvertEndings call ConvertEndings()
 
+function! SetFileFormatDOS()
+	execute 'ed ++ff=dos %'
+endfunction
+
+command! SetFileFormatDOS call SetFileFormatDOS()
+
 function! DetectCtrlPUserCommand()
 	if isdirectory("./.git")
 		let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
